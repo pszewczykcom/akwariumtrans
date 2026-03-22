@@ -12,7 +12,7 @@ RUN composer install --no-dev --no-scripts --optimize-autoloader --no-interactio
 
 COPY . .
 RUN composer dump-autoload --optimize --no-dev \
-    && APP_ENV=prod APP_SECRET=placeholder php bin/console asset-map:compile --no-interaction \
+    && APP_ENV=prod php bin/console asset-map:compile --no-interaction \
     && mkdir -p var/cache var/log \
     && chown -R www-data:www-data var/ public/assets/
 
