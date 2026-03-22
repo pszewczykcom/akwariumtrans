@@ -2,130 +2,96 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
 }
 
-.bg-danger {
-    background-color: #DE2C2C !important;
+img {
+    display: block;
+    max-width: 100%;
 }
 
 h1 {
-    font-weight: 700;
     font-size: 2rem;
+    font-weight: 700;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
 h2 {
-    font-size: 2rem; /* 32px converted to rem */
+    font-size: 2rem;
     font-weight: 600;
 }
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem; /* Smaller size on mobile */
-    }
-}
-
 h3 {
-    font-size: 1.5rem; /* 24px converted to rem */
-}
-
-@media (max-width: 768px) {
-    h3 {
-        font-size: 1.25rem;
-    }
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25rem; /* 20px converted to rem */
-}
-
-@media (max-width: 768px) {
-    h4 {
-        font-size: 1rem;
-    }
+    font-size: 1.25rem;
 }
 
 p {
     font-size: 0.875rem;
 }
 
-@media (max-width: 768px) {
-    p {
-        font-size: 0.75rem;
-    }
-}
-
-.navbar {
+.site-navbar {
     min-height: 85px;
     border-radius: 0 0 10px 10px;
 }
 
-.navbar-brand img {
-    width: 80px;
-    height: auto;
-}
-
-.navbar .i24 {
+.site-navbar .i24 {
     width: 39px;
     height: auto;
 }
 
-.navbar .phone {
+.site-navbar .phone {
     width: 35px;
     height: auto;
 }
 
-.navbar-nav .nav-link {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.9375rem;
+.site-nav-link {
     color: #232427;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:active {
+.site-nav-link:hover,
+.site-nav-link:focus-visible,
+.site-nav-link-active {
     text-decoration: underline;
-    text-decoration-color: red;
-    text-underline-offset: 6px;
+    text-decoration-color: #de2c2c;
     text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
 }
 
 .phone-link {
-    font-weight: 500;
-    font-size: 0.9375rem;
     color: #232427;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .hero-section {
-    background-image: url('../images/header.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
     position: relative;
     min-height: calc(100vh - 85px);
     max-height: calc(100vh - 85px);
     border-radius: 0 0 20px 20px;
+    background-image: url("../images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
 }
 
 .hero-section::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-    border-radius: 0 0 20px 20px;
+    inset: 0;
     z-index: 1;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
 .hero-content {
@@ -133,55 +99,44 @@ p {
     z-index: 2;
 }
 
-.btn-primary {
-    border: 0;
-    min-height: 53px;
-    padding: 15px 20px;
-    background: #DE2C2C;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    border-radius: 100px;
-    font-size: 0.937rem;
-}
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-    background: #C72525 !important;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8) !important;
-}
-
-.btn-secondary {
-    border: 0;
-    min-height: 53px;
-    padding: 15px 20px;
-    background: #2CAFDE;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
-    border-radius: 100px;
-}
-
-.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
-    background: #1c9ecb !important;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8) !important;
-}
-
 .hero-content .phone {
     width: 53px;
 }
 
-.hero-content .hero-pill {
-    border: 1px solid white;
+.vehicle-img-container,
+.vehicle-img-container-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 180px;
 }
 
 .vehicle-img-container {
-    aspect-ratio: 3/2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 180px;
+    aspect-ratio: 3 / 2;
 }
 
 .vehicle-img-container-large {
-    aspect-ratio: 16/7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 180px;
+    aspect-ratio: 16 / 7;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
 }

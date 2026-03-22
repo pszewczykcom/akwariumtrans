@@ -37,54 +37,100 @@
       gtag('config', 'G-DSN556B3ET');
     </script>
 
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#DE2C2C',
+                            'red-dark': '#C72525',
+                            blue: '#2CAFDE',
+                            'blue-dark': '#1C9ECB',
+                            dark: '#232427',
+                            light: '#F8F9FA',
+                            muted: '#6C757D',
+                        },
+                    },
+                    boxShadow: {
+                        brand: '0 4px 6px rgba(0, 0, 0, 0.7)',
+                        'brand-hover': '0 6px 8px rgba(0, 0, 0, 0.8)',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Righteous', 'cursive'],
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
     {{ importmap('app') }}
 </head>
-<body>
+<body class="bg-white font-sans text-base font-light text-brand-dark antialiased">
     {% set currentRoute = app.request.attributes.get('_route') %}
 
-    <nav class="navbar navbar-expand-lg sticky-top bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="{{ path('home') }}">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo">
+    <nav class="site-navbar sticky top-0 z-50 bg-white" data-mobile-nav>
+        <div class="mx-auto flex w-full max-w-[1320px] flex-wrap items-center justify-between gap-4 px-3 py-3 lg:flex-nowrap">
+            <a class="shrink-0" href="{{ path('home') }}">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-auto w-20">
             </a>
 
-            <div class="d-none d-sm-flex align-items-center me-auto ms-4">
-                <span class="d-inline-block text-center me-2">
-                    <img src="{{ asset('images/24.png') }}" alt="24/7" class="img-fluid i24">
+            <div class="hidden items-center gap-2 sm:flex lg:mr-auto lg:ml-4">
+                <span class="inline-flex items-center justify-center text-center">
+                    <img src="{{ asset('images/24.png') }}" alt="24/7" class="i24">
                 </span>
-                <span class="d-inline-block text-center me-2">
-                    <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="img-fluid phone">
+                <span class="inline-flex items-center justify-center text-center">
+                    <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="phone">
                 </span>
-                <a href="tel:+48604324770" class="text-decoration-none phone-link">+48 604 324 770</a>
+                <a href="tel:+48604324770" class="phone-link">+48 604 324 770</a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button
+                class="inline-flex items-center justify-center rounded-md border border-slate-200 p-2 text-brand-dark transition hover:bg-slate-100 lg:hidden"
+                type="button"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                data-mobile-nav-toggle
+            >
+                <svg data-mobile-nav-open-icon class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+                <svg data-mobile-nav-close-icon class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6l-12 12" />
+                </svg>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto gap-0 gap-sm-4 text-center text-lg-end">
-                    <li class="nav-item">
-                        <a class="nav-link{{ currentRoute == 'spedycja' ? ' active' : '' }}" href="{{ path('spedycja') }}">Spedycja</a>
+            <div
+                class="hidden w-full flex-col border-t border-slate-200 pt-4 lg:flex lg:w-auto lg:flex-row lg:items-center lg:border-0 lg:pt-0"
+                id="navbarSupportedContent"
+                data-mobile-nav-menu
+            >
+                <ul class="flex w-full flex-col items-center gap-4 text-center lg:ml-auto lg:w-auto lg:flex-row lg:gap-6 lg:text-right">
+                    <li>
+                        <a class="site-nav-link{{ currentRoute == 'spedycja' ? ' site-nav-link-active' : '' }}" href="{{ path('spedycja') }}">Spedycja</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link{{ currentRoute == 'transport' ? ' active' : '' }}" href="{{ path('transport') }}">Transport</a>
+                    <li>
+                        <a class="site-nav-link{{ currentRoute == 'transport' ? ' site-nav-link-active' : '' }}" href="{{ path('transport') }}">Transport</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link{{ currentRoute == 'logistyka' ? ' active' : '' }}" href="{{ path('logistyka') }}">Logistyka</a>
+                    <li>
+                        <a class="site-nav-link{{ currentRoute == 'logistyka' ? ' site-nav-link-active' : '' }}" href="{{ path('logistyka') }}">Logistyka</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link{{ currentRoute == 'wspolpraca' ? ' active' : '' }}" href="{{ path('wspolpraca') }}">Współpraca</a>
+                    <li>
+                        <a class="site-nav-link{{ currentRoute == 'wspolpraca' ? ' site-nav-link-active' : '' }}" href="{{ path('wspolpraca') }}">Współpraca</a>
                     </li>
-                    <li class="nav-item d-sm-none">
-                        <div class="text-center p-2">
-                            <span class="d-inline-block me-2">
-                                <img src="{{ asset('images/24.png') }}" alt="24/7" class="img-fluid i24">
+                    <li class="sm:hidden">
+                        <div class="p-2 text-center">
+                            <span class="mr-2 inline-flex items-center justify-center">
+                                <img src="{{ asset('images/24.png') }}" alt="24/7" class="i24">
                             </span>
-                            <span class="d-inline-block me-2">
-                                <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="img-fluid phone">
+                            <span class="mr-2 inline-flex items-center justify-center">
+                                <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="phone">
                             </span>
-                            <a href="tel:+48604324770" class="text-decoration-none phone-link">+48 604 324 770</a>
+                            <a href="tel:+48604324770" class="phone-link">+48 604 324 770</a>
                         </div>
                     </li>
                 </ul>
@@ -94,72 +140,70 @@
 
     {% block body %}{% endblock %}
 
-    <footer class="py-5" style="background: #232427;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-xl-3 mb-5 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
-                    <div class="text-center">
-                        <img src="{{ asset('images/logo-footer.png') }}" alt="Akwarium Logo" class="img-fluid mb-4 d-block m-auto" style="max-width: 180px;">
-                        <img src="{{ asset('images/24-white.png') }}" alt="24/7" class="img-fluid d-block m-auto" style="max-width: 35px;">
-                    </div>
+    <footer class="bg-brand-dark py-16">
+        <div class="mx-auto grid w-full max-w-[1320px] gap-12 px-3 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1fr)] lg:gap-8">
+            <div class="flex items-center justify-center lg:justify-start">
+                <div class="text-center lg:text-left">
+                    <img src="{{ asset('images/logo-footer.png') }}" alt="Akwarium Logo" class="mx-auto mb-4 h-auto w-full max-w-[180px] lg:mx-0">
+                    <img src="{{ asset('images/24-white.png') }}" alt="24/7" class="mx-auto h-auto w-full max-w-[35px] lg:mx-0">
                 </div>
+            </div>
 
-                <div class="col-lg-4 col-xl-3 mb-5 mb-lg-0 text-center text-lg-start">
-                    <h5 class="text-white mb-4">Na skróty</h5>
-                    <hr class="border-secondary opacity-50 w-50 mb-4 mx-auto mx-lg-0">
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <a href="{{ path('home') }}" class="text-decoration-none text-white fw-light">Strona główna</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="{{ path('wspolpraca') }}" class="text-decoration-none text-white fw-light">Współpraca</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="{{ path('transport') }}" class="text-decoration-none text-white fw-light">Transport</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="{{ path('logistyka') }}" class="text-decoration-none text-white fw-light">Logistyka</a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="{{ path('spedycja') }}" class="text-decoration-none text-white fw-light">Spedycja</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="text-center lg:text-left">
+                <h5 class="mb-4 text-xl font-semibold text-white">Na skróty</h5>
+                <div class="mx-auto mb-4 h-px w-1/2 bg-white/20 lg:mx-0"></div>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="{{ path('home') }}" class="font-light text-white no-underline transition hover:underline">Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('wspolpraca') }}" class="font-light text-white no-underline transition hover:underline">Współpraca</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('transport') }}" class="font-light text-white no-underline transition hover:underline">Transport</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('logistyka') }}" class="font-light text-white no-underline transition hover:underline">Logistyka</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('spedycja') }}" class="font-light text-white no-underline transition hover:underline">Spedycja</a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="col-lg-4 col-xl-3 mb-0 text-center text-lg-start">
-                    <h5 class="text-white mb-4">Kontakt</h5>
-                    <hr class="border-secondary opacity-50 w-50 mb-4 mx-auto mx-lg-0">
-                    <ul class="list-unstyled text-center text-lg-start">
-                        <li class="mb-4 d-flex align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start">
-                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04527 1.28802C0.944885 2.42078 0.944885 4.24391 0.944885 7.89018C0.944885 11.5365 0.944885 13.3596 2.04527 14.4923C3.14566 15.6251 4.9167 15.6251 8.45879 15.6251H12.2157C15.7578 15.6251 17.5289 15.6251 18.6293 14.4923C19.7297 13.3596 19.7297 11.5365 19.7297 7.89018C19.7297 4.24391 19.7297 2.42078 18.6293 1.28802C17.5289 0.155273 15.7578 0.155273 12.2157 0.155273H8.4588C4.9167 0.155273 3.14566 0.155273 2.04527 1.28802ZM16.5139 3.5585C16.7629 3.86616 16.7225 4.32341 16.4237 4.5798L14.3606 6.34955C13.5281 7.06373 12.8534 7.64259 12.2578 8.03688C11.6375 8.4476 11.0333 8.70706 10.3373 8.70706C9.64122 8.70706 9.03706 8.4476 8.4167 8.03688C7.82116 7.64259 7.14641 7.06374 6.31391 6.34956L4.25088 4.5798C3.952 4.32341 3.91162 3.86616 4.16068 3.5585C4.40974 3.25084 4.85393 3.20927 5.1528 3.46565L7.18052 5.20512C8.05679 5.95682 8.66517 6.47703 9.1788 6.81709C9.67599 7.14627 10.0132 7.25676 10.3373 7.25676C10.6614 7.25676 10.9986 7.14627 11.4957 6.81709C12.0094 6.47703 12.6178 5.95682 13.494 5.20512L15.5217 3.46565C15.8206 3.20927 16.2648 3.25084 16.5139 3.5585Z" fill="#232427"/>
-                                </svg>
-                            </div>
-                            <a href="mailto:akwariumtrans@op.pl" class="text-decoration-none text-white fw-light">akwariumtrans@op.pl</a>
-                        </li>
-                        <li class="mb-4 d-flex align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start">
-                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.43988 1.42783L7.06739 2.55223C7.63368 3.56693 7.40635 4.89805 6.51445 5.78996C6.51444 5.78996 6.51445 5.78996 6.51444 5.78996C6.51433 5.79008 5.43269 6.87193 7.3941 8.83334C9.35485 10.7941 10.4367 9.71381 10.4375 9.713C10.4375 9.71298 10.4375 9.71299 10.4375 9.71297C11.3294 8.82109 12.6605 8.59377 13.6752 9.16006L14.7996 9.78756C16.3318 10.6427 16.5128 12.7914 15.166 14.1382C14.3567 14.9475 13.3653 15.5772 12.2694 15.6188C10.4245 15.6887 7.29139 15.2218 4.14852 12.0789C1.00566 8.93606 0.53875 5.80294 0.608691 3.95803C0.650237 2.8621 1.27994 1.87072 2.0892 1.06145C3.436 -0.285344 5.58477 -0.10439 6.43988 1.42783Z" fill="#232427"/>
-                                </svg>
-                            </div>
-                            <a href="tel:604324770" class="text-decoration-none text-white fw-light">+48 604 324 770</a>
-                        </li>
-                        <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center justify-content-lg-start">
-                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.88958 15.8218C12.1613 15.8218 15.6243 14.2634 15.6243 12.3412C15.6243 11.3614 14.7248 10.4763 13.2771 9.84375C12.3938 11.4648 11.0467 12.8621 9.33559 13.5933C8.41587 13.9864 7.36329 13.9864 6.44356 13.5933C4.73249 12.8621 3.3854 11.4648 2.50203 9.84375C1.05439 10.4763 0.154877 11.3614 0.154877 12.3412C0.154877 14.2634 3.61782 15.8218 7.88958 15.8218Z" fill="#232427"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47528 5.39141C2.47528 2.60852 4.89934 0.352539 7.88957 0.352539C10.8798 0.352539 13.3039 2.60852 13.3039 5.39141C13.3039 8.1525 11.5758 11.3744 8.87966 12.5266C8.25115 12.7952 7.52799 12.7952 6.89948 12.5266C4.20334 11.3744 2.47528 8.1525 2.47528 5.39141ZM7.88957 7.31377C8.74392 7.31377 9.43651 6.62118 9.43651 5.76683C9.43651 4.91248 8.74392 4.21989 7.88957 4.21989C7.03522 4.21989 6.34263 4.91248 6.34263 5.76683C6.34263 6.62118 7.03522 7.31377 7.88957 7.31377Z" fill="#232427"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="mb-0 text-white fw-light">PPHU Akwarium</p>
-                                <p class="mb-0 text-white fw-light">Wrocławska 8, 63-421 Antonin</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="text-center lg:text-left">
+                <h5 class="mb-4 text-xl font-semibold text-white">Kontakt</h5>
+                <div class="mx-auto mb-4 h-px w-1/2 bg-white/20 lg:mx-0"></div>
+                <ul class="space-y-4 text-center lg:text-left">
+                    <li class="flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-center lg:justify-start">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-white">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04527 1.28802C0.944885 2.42078 0.944885 4.24391 0.944885 7.89018C0.944885 11.5365 0.944885 13.3596 2.04527 14.4923C3.14566 15.6251 4.9167 15.6251 8.45879 15.6251H12.2157C15.7578 15.6251 17.5289 15.6251 18.6293 14.4923C19.7297 13.3596 19.7297 11.5365 19.7297 7.89018C19.7297 4.24391 19.7297 2.42078 18.6293 1.28802C17.5289 0.155273 15.7578 0.155273 12.2157 0.155273H8.4588C4.9167 0.155273 3.14566 0.155273 2.04527 1.28802ZM16.5139 3.5585C16.7629 3.86616 16.7225 4.32341 16.4237 4.5798L14.3606 6.34955C13.5281 7.06373 12.8534 7.64259 12.2578 8.03688C11.6375 8.4476 11.0333 8.70706 10.3373 8.70706C9.64122 8.70706 9.03706 8.4476 8.4167 8.03688C7.82116 7.64259 7.14641 7.06374 6.31391 6.34956L4.25088 4.5798C3.952 4.32341 3.91162 3.86616 4.16068 3.5585C4.40974 3.25084 4.85393 3.20927 5.1528 3.46565L7.18052 5.20512C8.05679 5.95682 8.66517 6.47703 9.1788 6.81709C9.67599 7.14627 10.0132 7.25676 10.3373 7.25676C10.6614 7.25676 10.9986 7.14627 11.4957 6.81709C12.0094 6.47703 12.6178 5.95682 13.494 5.20512L15.5217 3.46565C15.8206 3.20927 16.2648 3.25084 16.5139 3.5585Z" fill="#232427"/>
+                            </svg>
+                        </div>
+                        <a href="mailto:akwariumtrans@op.pl" class="font-light text-white no-underline transition hover:underline">akwariumtrans@op.pl</a>
+                    </li>
+                    <li class="flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-center lg:justify-start">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-white">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.43988 1.42783L7.06739 2.55223C7.63368 3.56693 7.40635 4.89805 6.51445 5.78996C6.51444 5.78996 6.51445 5.78996 6.51444 5.78996C6.51433 5.79008 5.43269 6.87193 7.3941 8.83334C9.35485 10.7941 10.4367 9.71381 10.4375 9.713C10.4375 9.71298 10.4375 9.71299 10.4375 9.71297C11.3294 8.82109 12.6605 8.59377 13.6752 9.16006L14.7996 9.78756C16.3318 10.6427 16.5128 12.7914 15.166 14.1382C14.3567 14.9475 13.3653 15.5772 12.2694 15.6188C10.4245 15.6887 7.29139 15.2218 4.14852 12.0789C1.00566 8.93606 0.53875 5.80294 0.608691 3.95803C0.650237 2.8621 1.27994 1.87072 2.0892 1.06145C3.436 -0.285344 5.58477 -0.10439 6.43988 1.42783Z" fill="#232427"/>
+                            </svg>
+                        </div>
+                        <a href="tel:604324770" class="font-light text-white no-underline transition hover:underline">+48 604 324 770</a>
+                    </li>
+                    <li class="flex flex-col items-center justify-center gap-2 lg:flex-row lg:items-start lg:justify-start">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-white">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.88958 15.8218C12.1613 15.8218 15.6243 14.2634 15.6243 12.3412C15.6243 11.3614 14.7248 10.4763 13.2771 9.84375C12.3938 11.4648 11.0467 12.8621 9.33559 13.5933C8.41587 13.9864 7.36329 13.9864 6.44356 13.5933C4.73249 12.8621 3.3854 11.4648 2.50203 9.84375C1.05439 10.4763 0.154877 11.3614 0.154877 12.3412C0.154877 14.2634 3.61782 15.8218 7.88958 15.8218Z" fill="#232427"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47528 5.39141C2.47528 2.60852 4.89934 0.352539 7.88957 0.352539C10.8798 0.352539 13.3039 2.60852 13.3039 5.39141C13.3039 8.1525 11.5758 11.3744 8.87966 12.5266C8.25115 12.7952 7.52799 12.7952 6.89948 12.5266C4.20334 11.3744 2.47528 8.1525 2.47528 5.39141ZM7.88957 7.31377C8.74392 7.31377 9.43651 6.62118 9.43651 5.76683C9.43651 4.91248 8.74392 4.21989 7.88957 4.21989C7.03522 4.21989 6.34263 4.91248 6.34263 5.76683C6.34263 6.62118 7.03522 7.31377 7.88957 7.31377Z" fill="#232427"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="m-0 font-light text-white">PPHU Akwarium</p>
+                            <p class="m-0 font-light text-white">Wrocławska 8, 63-421 Antonin</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
