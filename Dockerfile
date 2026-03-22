@@ -1,5 +1,8 @@
 FROM php:8.4-fpm-alpine
 
+# Composer disables plugins as root unless this is set — symfony/runtime must generate vendor/autoload_runtime.php
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
 RUN apk add --no-cache nginx supervisor \
     && docker-php-ext-install opcache
 

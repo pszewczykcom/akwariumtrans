@@ -5,5 +5,5 @@ services:
     environment:
       - APP_ENV=prod
       - APP_SECRET=${APP_SECRET}
-    expose:
-      - "80"
+    ports:
+      - "8080:80"
