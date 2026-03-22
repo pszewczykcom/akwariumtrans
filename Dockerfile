@@ -1,9 +1,8 @@
 FROM php:8.5-fpm-alpine
 
-ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_ALLOW_SUPERUSER=1
 
-RUN apk add --no-cache nginx supervisor nodejs npm \
-    && docker-php-ext-install opcache
+RUN apk add --no-cache nginx supervisor nodejs npm
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
