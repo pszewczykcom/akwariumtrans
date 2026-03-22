@@ -11,7 +11,7 @@ COPY composer.json composer.lock symfony.lock ./
 RUN composer install --no-dev --no-scripts --optimize-autoloader --no-interaction
 
 COPY . .
-# importmap:install downloads JS/CSS vendor files (bootstrap, stimulus, …) into assets/vendor/
+# importmap:install downloads JS vendor files (stimulus, turbo, …) into assets/vendor/
 # — required because composer install uses --no-scripts and .dockerignore excludes host vendor dirs
 RUN composer dump-autoload --optimize --no-dev \
     && APP_ENV=prod APP_SECRET=placeholder php bin/console importmap:install --no-interaction \

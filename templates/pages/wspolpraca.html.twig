@@ -3,44 +3,46 @@
 {% block title %}Akwarium - Współpraca{% endblock %}
 
 {% block body %}
-    <!-- Hero Section -->
-    <header class="hero-section align-content-center mb-5" id="hero" style="background-image: url('{{ asset("images/header-5.jpg") }}') !important;">
-        <div class="container">
-            <div class="row align-items-center text-center text-lg-start">
-                <div class="col-12 col-lg-6 hero-content p-2 p-lg-0">
+    <header class="hero-section mb-12 flex items-center" id="hero" style="background-image: url('{{ asset("images/header-5.jpg") }}') !important;">
+        <div class="mx-auto w-full max-w-[1320px] px-3">
+            <div class="grid items-center text-center lg:grid-cols-2 lg:text-left">
+                <div class="hero-content w-full px-2 lg:px-0">
                     <h1 class="mb-4">Współpraca</h1>
-                    <p class="mb-4">
+                    <p class="mb-4 max-w-[38rem] text-white/90">
                         Współpracując z nami, możesz liczyć na prowadzenie pojazdów zgodnie z Twoimi preferencjami, kompleksową organizację transportu oraz precyzyjną wycenę usług. Dbamy o dostosowanie trasy, monitorowanie realizacji i pełną przejrzystość kosztów, aby zapewnić efektywny i zgodny z harmonogramem przewóz.
                     </p>
-                    <div class="d-flex align-items-center mb-4 flex-lg-row flex-column text-center text-lg-start">
-                        <a href="{{ path('home') }}#contact" class="btn btn-secondary mb-3 mb-lg-0">Skontaktuj się z nami</a>
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="{{ path('home') }}#contact" class="inline-flex min-h-[53px] items-center justify-center rounded-full bg-brand-blue px-5 py-[15px] text-[0.937rem] font-medium text-white no-underline shadow-brand transition duration-200 hover:bg-brand-blue-dark hover:shadow-brand-hover">
+                            Skontaktuj się z nami
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services-section py-5">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 order-lg-1 order-2 p-4 px-5">
-                    <h2 class="mb-3 fw-bold">
-                        <span class="text-danger">Zatrudnimy</span> przewoźników<br>
+    <section class="py-12">
+        <div class="mx-auto w-full max-w-[1320px] px-3">
+            <div class="grid items-center gap-8 lg:grid-cols-2">
+                <div class="order-2 px-4 lg:order-1 lg:px-10">
+                    <h2 class="mb-3 font-bold">
+                        <span class="text-brand-red">Zatrudnimy</span> przewoźników<br>
                         do współpracy!
                     </h2>
-                    <p class="text-muted mb-4">
+                    <p class="mb-4 text-brand-muted">
                         Współpraca z wiarygodnymi i profesjonalnymi
                         przewoźnikami jest jednym z kluczowych elementów
                         sukcesu i zadowolenia naszych klientów. Partnerów
                         dobieramy według ustalonych standardów, które
                         gwarantują wysoką jakość obsługi naszych klientów.
                     </p>
-                    <a href="{{ path('home') }}#contact" class="btn btn-primary">Rozpocznij współpracę</a>
+                    <a href="{{ path('home') }}#contact" class="inline-flex min-h-[53px] items-center justify-center rounded-full bg-brand-red px-5 py-[15px] text-[0.937rem] font-medium text-white no-underline shadow-brand transition duration-200 hover:bg-brand-red-dark hover:shadow-brand-hover">
+                        Rozpocznij współpracę
+                    </a>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-                    <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/truck.png') }}" alt="Truck cabin interior" class="img-fluid w-100">
+                <div class="order-1 lg:order-2">
+                    <div class="overflow-hidden rounded-[20px]">
+                        <img src="{{ asset('images/truck.png') }}" alt="Truck cabin interior" class="w-full">
                     </div>
                 </div>
             </div>

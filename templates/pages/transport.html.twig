@@ -3,50 +3,44 @@
 {% block title %}Akwarium - Transport{% endblock %}
 
 {% block body %}
-    <!-- Hero Section -->
-    <header class="hero-section align-content-center mb-5" id="hero" style="background-image: url('{{ asset("images/header-3.jpg") }}') !important;">
-        <div class="container">
-            <div class="row align-items-center text-center text-lg-start">
-                <div class="col-12 col-lg-6 hero-content p-2 p-lg-0">
+    <header class="hero-section mb-12 flex items-center" id="hero" style="background-image: url('{{ asset("images/header-3.jpg") }}') !important;">
+        <div class="mx-auto w-full max-w-[1320px] px-3">
+            <div class="grid items-center text-center lg:grid-cols-2 lg:text-left">
+                <div class="hero-content w-full px-2 lg:px-0">
                     <h1 class="mb-4">Bezpieczny transport – na każdą potrzebę</h1>
-                    <p class="mb-4">
+                    <p class="mb-4 max-w-[38rem] text-white/90">
                         Transport to rdzeń naszej działalności. Dysponujemy nowoczesną flotą pojazdów, które są gotowe podjąć każde zlecenie – od małych przesyłek po duże, wymagające transporty ciężarowe. Nasze doświadczenie w przewozach krajowych i międzynarodowych pozwala nam dostarczać towary w każdy zakątek Europy, zawsze terminowo i bezpiecznie.
                     </p>
-                    <div class="d-flex align-items-center mb-4 flex-lg-row flex-column text-center text-lg-start">
-                        <a href="{{ path('home') }}#contact" class="btn btn-secondary mb-3 mb-lg-0">Skontaktuj się z nami</a>
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="{{ path('home') }}#contact" class="inline-flex min-h-[53px] items-center justify-center rounded-full bg-brand-blue px-5 py-[15px] text-[0.937rem] font-medium text-white no-underline shadow-brand transition duration-200 hover:bg-brand-blue-dark hover:shadow-brand-hover">
+                            Skontaktuj się z nami
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services-section py-5">
-        <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-5 mb-4 mb-lg-0 px-5 px-lg-0 order-2 order-lg-first">
-                    <img src="{{ asset('images/feature-4.png') }}" alt="" class="img-fluid">
+    <section class="py-12">
+        <div class="mx-auto w-full max-w-[1320px] px-3">
+            <div class="grid items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+                <div class="order-2 px-5 lg:order-1 lg:px-0">
+                    <img src="{{ asset('images/feature-4.png') }}" alt="">
                 </div>
-                <div class="col-lg-7 px-lg-5 order-first order-lg-last">
-                    <h2 class="fw-bold mb-5">Usługi transportowe</h2>
-                    <div class="service-list">
-                        <div class="d-flex mb-5">
-                            <div class="me-4" style="min-width: 6px; background-color: #dc3545;"></div>
-                            <div>
-                                <p class="mb-0 fw-normal">Transport ciężarowy – Idealny dla ładunków o dużych gabarytach i masie. Nasza flota ciężarówek spełnia najwyższe standardy bezpieczeństwa.</p>
-                            </div>
+                <div class="order-1 lg:order-2 lg:px-10">
+                    <h2 class="mb-8 font-bold">Usługi transportowe</h2>
+                    <div>
+                        <div class="mb-8 flex gap-4">
+                            <div class="w-[6px] shrink-0 bg-brand-red"></div>
+                            <p class="m-0 font-normal">Transport ciężarowy – Idealny dla ładunków o dużych gabarytach i masie. Nasza flota ciężarówek spełnia najwyższe standardy bezpieczeństwa.</p>
                         </div>
-                        <div class="d-flex mb-5">
-                            <div class="me-4" style="min-width: 6px; background-color: #dc3545;"></div>
-                            <div>
-                                <p class="mb-0 fw-normal">Transport ekspresowy – Szybkie i bezpośrednie przewozy na krótkich oraz długich trasach, dostępne 24/7.</p>
-                            </div>
+                        <div class="mb-8 flex gap-4">
+                            <div class="w-[6px] shrink-0 bg-brand-red"></div>
+                            <p class="m-0 font-normal">Transport ekspresowy – Szybkie i bezpośrednie przewozy na krótkich oraz długich trasach, dostępne 24/7.</p>
                         </div>
-                        <div class="d-flex mb-5 mb-lg-0">
-                            <div class="me-4" style="min-width: 6px; background-color: #dc3545;"></div>
-                            <div>
-                                <p class="mb-0 fw-normal">Transport materiałów ADR – Specjalistyczny transport materiałów niebezpiecznych zgodnie z międzynarodowymi przepisami.</p>
-                            </div>
+                        <div class="flex gap-4">
+                            <div class="w-[6px] shrink-0 bg-brand-red"></div>
+                            <p class="m-0 font-normal">Transport materiałów ADR – Specjalistyczny transport materiałów niebezpiecznych zgodnie z międzynarodowymi przepisami.</p>
                         </div>
                     </div>
                 </div>
@@ -54,19 +48,15 @@
         </div>
     </section>
 
-    <section class="cta-section pt-0 pt-lg-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mx-auto">
-                    <div class="card border-0 shadow-sm rounded-5 py-4 px-4 bg-light">
-                        <div class="card-body text-center">
-                            <h4 class="mb-4 px-md-5">
-                                Niezależnie od tego, czy potrzebujesz przewozu towarów standardowych, czy specjalistycznych, nasz zespół zapewni profesjonalną obsługę na każdym kroku. Z nami masz gwarancję, że Twój ładunek dotrze na miejsce bezpiecznie, szybko i zgodnie z planem.
-                            </h4>
-                            <a href="{{ path('home') }}#contact" class="btn btn-primary">Skontaktuj się z nami</a>
-                        </div>
-                    </div>
-                </div>
+    <section class="pb-12 pt-0 lg:pb-16 lg:pt-8">
+        <div class="mx-auto w-full max-w-[1320px] px-3">
+            <div class="rounded-[2.5rem] bg-brand-light px-4 py-8 text-center shadow-sm lg:px-6">
+                <h4 class="mb-4 lg:px-16">
+                    Niezależnie od tego, czy potrzebujesz przewozu towarów standardowych, czy specjalistycznych, nasz zespół zapewni profesjonalną obsługę na każdym kroku. Z nami masz gwarancję, że Twój ładunek dotrze na miejsce bezpiecznie, szybko i zgodnie z planem.
+                </h4>
+                <a href="{{ path('home') }}#contact" class="inline-flex min-h-[53px] items-center justify-center rounded-full bg-brand-red px-5 py-[15px] text-[0.937rem] font-medium text-white no-underline shadow-brand transition duration-200 hover:bg-brand-red-dark hover:shadow-brand-hover">
+                    Skontaktuj się z nami
+                </a>
             </div>
         </div>
     </section>
