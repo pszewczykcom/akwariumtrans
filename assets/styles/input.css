@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap");
+
+@import "tailwindcss";
+
+@source "../../templates";
+
+@theme {
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-2xl: 1400px;
+
+    --color-brand-red: #DE2C2C;
+    --color-brand-red-hover: #C72525;
+    --color-brand-dark: #232427;
+    --color-brand-cyan: #2CAFDE;
+    --color-brand-cyan-hover: #1c9ecb;
+    --color-brand-info: #0dcaf0;
+}
+
+/* Container matching Bootstrap's centered layout with custom max-widths */
+.container {
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    .container { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+    .container { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+    .container { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+    .container { max-width: 1320px; }
+}
+
+/* Base typography */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 1rem;
+    }
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Button components */
+.btn-primary {
+    display: inline-block;
+    border: 0;
+    min-height: 53px;
+    padding: 15px 20px;
+    background: #DE2C2C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+    font-size: 0.937rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #C72525;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn-secondary {
+    display: inline-block;
+    border: 0;
+    min-height: 53px;
+    padding: 15px 20px;
+    background: #2CAFDE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+    background: #1c9ecb;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Hero section with gradient overlay */
+.hero-section {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    min-height: calc(100vh - 85px);
+    max-height: calc(100vh - 85px);
+    border-radius: 0 0 20px 20px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Vehicle card image containers */
+.vehicle-img-container {
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 180px;
+}
+
+.vehicle-img-container-large {
+    aspect-ratio: 16/7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 180px;
+}

@@ -25,3 +25,8 @@
 /public/assets/
 /assets/vendor/
 ###< symfony/asset-mapper ###
+
+###> tailwindcss ###
+/node_modules/
+/assets/styles/app.css
+###< tailwindcss ###

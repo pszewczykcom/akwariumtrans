@@ -1,0 +1,29 @@
+{
+  "name": "akwariumtrans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev:css": "npx @tailwindcss/cli -i ./assets/styles/input.css -o ./assets/styles/app.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./assets/styles/input.css -o ./assets/styles/app.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pszewczykcom/akwariumtrans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pszewczykcom/akwariumtrans/issues"
+  },
+  "homepage": "https://github.com/pszewczykcom/akwariumtrans#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
