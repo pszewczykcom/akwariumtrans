@@ -4,19 +4,19 @@
 
 {% block body %}
     <!-- Hero Section -->
-    <header class="hero-section align-content-center mb-5" id="hero">
+    <header class="hero-section content-center mb-12" id="hero">
         <div class="container">
-            <div class="row align-items-center text-center text-lg-start">
-                <div class="col-12 col-lg-6 hero-content p-2 p-lg-0">
-                    <h1 class="mb-4">Twoje ładunki – nasza odpowiedzialność. Globalna logistyka na najwyższym poziomie.</h1>
-                    <p class="mb-4">
+            <div class="flex flex-wrap items-center text-center lg:text-left">
+                <div class="w-full lg:w-1/2 hero-content p-2 lg:p-0">
+                    <h1 class="mb-6">Twoje ładunki – nasza odpowiedzialność. Globalna logistyka na najwyższym poziomie.</h1>
+                    <p class="mb-6">
                         Firma spedycyjno-transportowa – niezawodny partner logistyczny, który dostarczy Twój towar szybko i bezpiecznie w dowolne miejsce na świecie. Działamy 24/7, oferując ekspresowy transport lądowy, w tym przewóz materiałów ADR. Skontaktuj się z nami już dziś i poznaj naszą ofertę!
                     </p>
-                    <div class="d-flex align-items-center mb-4 flex-lg-row flex-column text-center text-lg-start">
-                        <a href="#contact" class="btn btn-primary mb-3 mb-lg-0">Skontaktuj się z nami</a>
-                        <div class="d-flex align-items-center ms-lg-3 justify-content-center">
-                            <img src="{{ asset('images/phone_inverse.png') }}" alt="Phone Icon" class="img-fluid phone">
-                            <a class="text-white text-decoration-none ms-3" href="tel:+48604324770">+48 604 324 770</a>
+                    <div class="flex items-center mb-6 flex-col lg:flex-row text-center lg:text-left">
+                        <a href="#contact" class="btn btn-primary mb-4 lg:mb-0">Skontaktuj się z nami</a>
+                        <div class="flex items-center lg:ml-4 justify-center">
+                            <img src="{{ asset('images/phone_inverse.png') }}" alt="Phone Icon" class="max-w-full h-auto w-[53px]">
+                            <a class="text-white no-underline ml-4" href="tel:+48604324770">+48 604 324 770</a>
                         </div>
                     </div>
                 </div>
@@ -25,61 +25,61 @@
     </header>
 
     <!-- Feature Section -->
-    <section class="feature-section py-5" id="feature">
+    <section class="py-12" id="feature">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h2 class="mb-4 fw-bold">
-                        Bezpieczny i szybki <span class="text-danger">transport</span>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-5/12 mb-12 lg:mb-0">
+                    <h2 class="mb-6 font-bold">
+                        Bezpieczny i szybki <span class="text-brand-red">transport</span>
                         <br>na każdym etapie drogi.
                     </h2>
 
-                    <div class="mb-4">
-                        <div class="d-flex align-items-center">
-                            <div class="mx-auto">
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <div class="mx-auto shrink-0">
                                 <svg width="34" height="52" viewBox="0 0 34 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 37H0V39H2V37ZM33.4142 38.4142C34.1953 37.6332 34.1953 36.3668 33.4142 35.5858L20.6863 22.8579C19.9052 22.0768 18.6389 22.0768 17.8579 22.8579C17.0768 23.6389 17.0768 24.9052 17.8579 25.6863L29.1716 37L17.8579 48.3137C17.0768 49.0948 17.0768 50.3611 17.8579 51.1421C18.6389 51.9232 19.9052 51.9232 20.6863 51.1421L33.4142 38.4142ZM0 0V37H4V0H0ZM2 39H32V35H2V39Z" fill="#DE2C2C"/>
                                 </svg>
                             </div>
-                            <p class="ms-4 mb-0">
+                            <p class="ml-6 mb-0">
                                 Jako międzynarodowy lider w branży spedycyjnej, oferuje kompleksowe usługi logistyczne, które spełniają najbardziej wymagające potrzeby naszych klientów.
                             </p>
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <div class="d-flex align-items-center">
-                            <div class="feature-icon">
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <div class="shrink-0">
                                 <svg width="34" height="52" viewBox="0 0 34 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 37H0V39H2V37ZM33.4142 38.4142C34.1953 37.6332 34.1953 36.3668 33.4142 35.5858L20.6863 22.8579C19.9052 22.0768 18.6389 22.0768 17.8579 22.8579C17.0768 23.6389 17.0768 24.9052 17.8579 25.6863L29.1716 37L17.8579 48.3137C17.0768 49.0948 17.0768 50.3611 17.8579 51.1421C18.6389 51.9232 19.9052 51.9232 20.6863 51.1421L33.4142 38.4142ZM0 0V37H4V0H0ZM2 39H32V35H2V39Z" fill="#232427"/>
                                 </svg>
                             </div>
-                            <p class="ms-4 mb-0">
+                            <p class="ml-6 mb-0">
                                 Nasza flota samochodów, ciężarówek i busów gotowa jest na przewozy ekspresowe, a nasze usługi dostępne są 24 godziny na dobę, 7 dni w tygodniu.
                             </p>
                         </div>
                     </div>
 
-                    <div class="mb-4">
-                        <div class="d-flex align-items-center">
-                            <div class="feature-icon">
+                    <div class="mb-6">
+                        <div class="flex items-center">
+                            <div class="shrink-0">
                                 <svg width="34" height="52" viewBox="0 0 34 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 37H0V39H2V37ZM33.4142 38.4142C34.1953 37.6332 34.1953 36.3668 33.4142 35.5858L20.6863 22.8579C19.9052 22.0768 18.6389 22.0768 17.8579 22.8579C17.0768 23.6389 17.0768 24.9052 17.8579 25.6863L29.1716 37L17.8579 48.3137C17.0768 49.0948 17.0768 50.3611 17.8579 51.1421C18.6389 51.9232 19.9052 51.9232 20.6863 51.1421L33.4142 38.4142ZM0 0V37H4V0H0ZM2 39H32V35H2V39Z" fill="#DE2C2C"/>
                                 </svg>
                             </div>
-                            <p class="ms-4 mb-0">
+                            <p class="ml-6 mb-0">
                                 Specjalizujemy się także w przewozach materiałów niebezpiecznych (ADR), dbając o pełne bezpieczeństwo i zgodność z przepisami.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <div class="d-flex flex-wrap position-relative">
-                        <div style="width: 55%; margin-top: 0; margin-left: 20%; z-index: 3;">
-                            <img src="{{ asset('images/feature-1.png') }}" alt="" class="img-fluid rounded-5 shadow">
+                <div class="w-full lg:w-6/12 lg:ml-[8.333%]">
+                    <div class="flex flex-wrap relative">
+                        <div class="w-[55%] ml-[20%] z-[3]">
+                            <img src="{{ asset('images/feature-1.png') }}" alt="" class="max-w-full h-auto rounded-3xl shadow">
                         </div>
-                        <div style="width: 55%; margin-top: -40%; margin-left: 45%; z-index: 4;">
-                            <img src="{{ asset('images/feature-2.png') }}" alt="" class="img-fluid">
+                        <div class="w-[55%] -mt-[40%] ml-[45%] z-[4]">
+                            <img src="{{ asset('images/feature-2.png') }}" alt="" class="max-w-full h-auto">
                         </div>
                     </div>
                 </div>
@@ -88,175 +88,176 @@
     </section>
 
     <!-- Vehicles Offer Section -->
-    <section class="vehicles-section py-5" id="offer">
-        <div class="container-fluid p-0">
-            <div class="bg-info text-white text-center mb-5 align-content-center py-5">
-                <h2 class="fw-bold">Oferta pojazdów</h2>
+    <section class="py-12" id="offer">
+        <div class="w-full">
+            <div class="bg-brand-info text-white text-center mb-12 content-center py-12">
+                <h2 class="font-bold">Oferta pojazdów</h2>
             </div>
         </div>
 
         <div class="container">
-            <div class="row justify-content-center"><div class="col col-xl-10 text-center">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full xl:w-10/12 text-center">
 
                 <!-- Busy -->
-                <div class="text-center my-4">
-                    <h3 class="bg-dark text-white d-inline-block px-4 py-2 mb-4">Busy</h3>
-                    <h4 class="mb-3">Szybki transport na krótkich dystansach</h4>
-                    <p class="text-muted">
+                <div class="text-center my-6">
+                    <h3 class="bg-brand-dark text-white inline-block px-6 py-2 mb-6">Busy</h3>
+                    <h4 class="mb-4">Szybki transport na krótkich dystansach</h4>
+                    <p class="text-gray-500">
                         Nasze busy idealnie sprawdzają się w ekspresowych dostawach mniejszych ładunków.
                         <br>Zapewniają szybkość, elastyczność i dostępność, nawet w trudno dostępnych lokalizacjach
                     </p>
                 </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info px-3 py-4 text-center rounded-3 align-content-end vehicle-img-container">
-                                <img src="{{ asset('images/oferta/bus.png') }}" alt="Bus" class="img-fluid">
+                <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-wrap lg:justify-center lg:gap-4 mb-12">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info px-4 py-6 text-center rounded-lg vehicle-img-container">
+                                <img src="{{ asset('images/oferta/bus.png') }}" alt="Bus" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Bus</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Bus</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info px-3 py-4 text-center rounded-3 align-content-end vehicle-img-container">
-                                <img src="{{ asset('images/oferta/bus-plandeka.png') }}" alt="Bus" class="img-fluid">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info px-4 py-6 text-center rounded-lg vehicle-img-container">
+                                <img src="{{ asset('images/oferta/bus-plandeka.png') }}" alt="Bus" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Bus<br>+ plandeka</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Bus<br>+ plandeka</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Ciężarówki solowe -->
-                <div class="text-center my-4">
-                    <h3 class="bg-dark text-white d-inline-block px-4 py-2 mb-4">Ciężarówki solowe</h3>
-                    <h4 class="mb-3">Niezawodność i wszechstronność</h4>
-                    <p class="text-muted">
+                <div class="text-center my-6">
+                    <h3 class="bg-brand-dark text-white inline-block px-6 py-2 mb-6">Ciężarówki solowe</h3>
+                    <h4 class="mb-4">Niezawodność i wszechstronność</h4>
+                    <p class="text-gray-500">
                         Ciężarówki solowe to idealne rozwiązanie dla krajowych przewozów kontraktowych na średnich
                         i dłuższych trasach. Duża ich dostępność, niezawodność, szeroki zakres ładowności i możliwość
                         szybkiego dopasowania możliwości pojazdu do wymagań.
                     </p>
                 </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container">
-                                <img src="{{ asset('images/oferta/solowka.png') }}" alt="Solówka" class="img-fluid">
+                <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-wrap lg:justify-center lg:gap-4 mb-12">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container">
+                                <img src="{{ asset('images/oferta/solowka.png') }}" alt="Solówka" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Solówka</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Solówka</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container">
-                                <img src="{{ asset('images/oferta/solowka-plandeka.png') }}" alt="Solówka + plandeka" class="img-fluid">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container">
+                                <img src="{{ asset('images/oferta/solowka-plandeka.png') }}" alt="Solówka + plandeka" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Solówka<br>+ plandeka</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Solówka<br>+ plandeka</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tandem -->
-                <div class="text-center my-4">
-                    <h3 class="bg-dark text-white d-inline-block px-4 py-2 mb-4">Tandem</h3>
-                    <h4 class="mb-3">Maksymalna pojemność na każdą trasę</h4>
-                    <p class="text-muted">
+                <div class="text-center my-6">
+                    <h3 class="bg-brand-dark text-white inline-block px-6 py-2 mb-6">Tandem</h3>
+                    <h4 class="mb-4">Maksymalna pojemność na każdą trasę</h4>
+                    <p class="text-gray-500">
                         Zestawy tandemowe umożliwiają przewóz dużych ładunków, łącząc pojemność z doskonałą manewrowością. Idealne do transportu wielkogabarytowego, gwarantują efektywność na długich dystansach.
                     </p>
                 </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/auto-przyczepa.png') }}" alt="Auto + przyczepa" class="img-fluid">
+                <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-wrap lg:justify-center lg:gap-4 mb-12">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/auto-przyczepa.png') }}" alt="Auto + przyczepa" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Auto + przyczepa</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Auto + przyczepa</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Ciągniki siodłowe i naczepy -->
-                <div class="text-center my-4">
-                    <h3 class="bg-dark text-white d-inline-block px-4 py-2 mb-4">Ciągniki siodłowe i naczepy</h3>
-                    <h4 class="mb-3">Moc i wydajność dla wymagających ładunków</h4>
-                    <p class="text-muted">
+                <div class="text-center my-6">
+                    <h3 class="bg-brand-dark text-white inline-block px-6 py-2 mb-6">Ciągniki siodłowe i naczepy</h3>
+                    <h4 class="mb-4">Moc i wydajność dla wymagających ładunków</h4>
+                    <p class="text-gray-500">
                         Nasze ciągniki siodłowe, wyposażone w nowoczesne naczepy, doskonale sprawdzają się w przewozie ciężkich i dużych ładunków na dalekich trasach. Zapewniają stabilność, bezpieczeństwo i niezawodność, nawet przy najbardziej wymagających zleceniach.
                     </p>
                 </div>
-                <div class="row justify-content-center mb-5">
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/naczepa-standard.png') }}" alt="Naczepa standard" class="img-fluid">
+                <div class="grid grid-cols-2 gap-4 lg:flex lg:flex-wrap lg:justify-center lg:gap-4 mb-12">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/naczepa-standard.png') }}" alt="Naczepa standard" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Naczepa standard</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/naczepa-mega.png') }}" alt="Naczepa MEGA" class="img-fluid">
-                            </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Naczepa MEGA</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Naczepa standard</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/wywrotka.png') }}" alt="Wywrotka" class="img-fluid">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/naczepa-mega.png') }}" alt="Naczepa MEGA" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Wywrotka</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/chlodnia.png') }}" alt="Chłodnia" class="img-fluid">
-                            </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Chłodnia</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Naczepa MEGA</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/chlodnia.png') }}" alt="Izoterma" class="img-fluid">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/wywrotka.png') }}" alt="Wywrotka" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Izoterma</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Wywrotka</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-auto mb-3">
-                        <div class="card h-100 border-0 bg-light">
-                            <div class="bg-info p-3 text-center rounded-3 align-content-end vehicle-img-container-large">
-                                <img src="{{ asset('images/oferta/cysterna.png') }}" alt="Cysterna" class="img-fluid">
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/chlodnia.png') }}" alt="Chłodnia" class="max-w-full h-auto">
                             </div>
-                            <div class="card-body text-center align-content-center p-3">
-                                <h3 class="fw-bold">Cysterna</h3>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Chłodnia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/chlodnia.png') }}" alt="Izoterma" class="max-w-full h-auto">
+                            </div>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Izoterma</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-auto">
+                        <div class="h-full bg-gray-50 rounded-lg overflow-hidden">
+                            <div class="bg-brand-info p-4 text-center rounded-lg vehicle-img-container-large">
+                                <img src="{{ asset('images/oferta/cysterna.png') }}" alt="Cysterna" class="max-w-full h-auto">
+                            </div>
+                            <div class="text-center content-center p-4">
+                                <h3 class="font-bold">Cysterna</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center my-4">
-                    <h3 class="bg-dark text-white d-inline-block px-4 py-2 mb-4">Do dyspozycji również auta wyposażone w windy wraz z paleciakiem.</h3>
+                <div class="text-center my-6">
+                    <h3 class="bg-brand-dark text-white inline-block px-6 py-2 mb-6">Do dyspozycji również auta wyposażone w windy wraz z paleciakiem.</h3>
                 </div>
 
             </div></div>
@@ -264,95 +265,87 @@
     </section>
 
     <!-- Dlaczego my? Section -->
-    <section class="why-us-section py-5" style="background-color: #212529;" id="why-us">
+    <section class="py-12 bg-[#212529]" id="why-us">
         <div class="container">
-            <div class="d-flex align-items-center mb-5">
-                <h2 class="text-white fw-bold mb-0 me-3">Dlaczego my?</h2>
-                <div class="flex-grow-1">
+            <div class="flex items-center mb-12">
+                <h2 class="text-white font-bold mb-0 mr-4 shrink-0">Dlaczego my?</h2>
+                <div class="grow">
                     <hr class="border-white opacity-100" />
                 </div>
             </div>
 
-            <div class="row g-3 g-xl-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-6">
                 <!-- Globalny zasięg -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 rounded p-3 p-xl-5">
-                        <div class="text-center align-content-center mb-4" style="min-height: 100px;">
-                            <svg width="60" height="86" viewBox="0 0 60 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.4989 40.0936C12.8416 44.478 16.0537 49.2007 19.2747 53.5004L19.2751 53.5009C23.8334 59.5768 26.8431 62.8684 28.8059 65.015C29.0297 65.2597 29.2398 65.4896 29.4371 65.707L29.9914 66.3178L30.5469 65.7081C30.7369 65.4995 30.9387 65.2796 31.153 65.046C33.1222 62.8996 36.1444 59.6054 40.7177 53.5004C43.9394 49.1998 47.1437 44.4774 49.4935 40.0938L49.4937 40.0934C50.6687 37.8981 51.603 35.7665 52.2453 33.8788C52.883 32.0046 53.25 30.3213 53.25 29.0381C53.25 16.7062 42.919 6.72826 30 6.72826C17.0734 6.72826 6.75001 16.7064 6.75001 29.0381C6.75001 30.3202 7.1127 32.0028 7.74776 33.8778C8.38724 35.7658 9.31976 37.8977 10.4989 40.0936ZM10.4989 40.0936C10.4987 40.0934 10.4986 40.0931 10.4985 40.0929L11.16 39.7395M10.4989 40.0936C10.499 40.0938 10.4991 40.0941 10.4992 40.0943L11.16 39.7395M11.16 39.7395C8.83499 35.4096 7.50001 31.3638 7.50001 29.0381C7.50001 17.1477 17.46 7.47826 30 7.47826C42.5325 7.47826 52.5 17.1477 52.5 29.0381C52.5 31.3638 51.15 35.4096 48.8325 39.7395C46.5075 44.0769 43.3275 48.7657 40.1175 53.0508C35.5664 59.126 32.564 62.3986 30.5991 64.5403C30.5661 64.5763 30.5334 64.6119 30.501 64.6473C30.5167 64.6646 30.5323 64.6818 30.5479 64.6989L29.9925 65.203L29.4381 64.6978C29.4537 64.6808 29.4693 64.6636 29.485 64.6464C29.444 64.6015 29.4026 64.5561 29.3606 64.5103C27.4018 62.368 24.4116 59.0977 19.875 53.0508C16.665 48.7657 13.4775 44.0769 11.16 39.7395ZM42.8259 60.3836L43.3795 60.686C47.2315 62.79 49.5 65.627 49.5 68.3962C49.5 70.9589 47.7968 73.5249 44.3363 75.6527C44.336 75.6529 44.3357 75.6531 44.3353 75.6533L43.9425 75.0144C40.5975 77.0784 35.5875 78.5217 29.9925 78.5217C24.4125 78.5217 19.4175 77.0784 16.065 75.0144L42.8259 60.3836ZM42.8259 60.3836L42.4331 60.8772C39.7327 64.2708 37.1663 67.3279 35.2747 69.5367C34.3291 70.641 33.5524 71.5328 33.0125 72.1483C32.7426 72.456 32.5318 72.6946 32.3887 72.8561C32.3172 72.9368 32.2626 72.9983 32.2259 73.0394L32.1845 73.0859L32.1772 73.094C31.8979 73.3898 31.5609 73.6258 31.1867 73.7876C30.8099 73.9506 30.4034 74.0347 29.9925 74.0347C29.5816 74.0347 29.1751 73.9506 28.7982 73.7876C28.424 73.6258 28.0869 73.3897 27.8076 73.0939L27.8002 73.0856L27.7589 73.0393C27.7223 72.9982 27.6677 72.9369 27.5963 72.8564C27.4534 72.6954 27.2429 72.4574 26.9733 72.1504C26.4341 71.5365 25.6585 70.6467 24.7138 69.5448C22.8241 67.3406 20.2595 64.2892 17.5591 60.8993L17.1666 60.4065L16.6134 60.7081C12.7701 62.804 10.5 65.6258 10.5 68.3962C10.5 70.9602 12.2123 73.5262 15.6722 75.6533L42.8259 60.3836ZM5.1985 42.9074L5.19847 42.9073C2.60717 38.0748 0.75 33.5018 0.75 29.0381C0.75 13.414 13.9263 0.75 30 0.75C46.0663 0.75 59.25 13.4141 59.25 29.0381C59.25 33.5013 57.3858 38.0739 54.794 42.9073L54.7937 42.9078C52.62 46.9691 49.8604 51.0502 47.0409 54.928L46.561 55.588L47.2591 56.0106C52.1394 58.9654 55.5 63.2179 55.5 68.3962C55.5 73.51 52.1572 77.8731 47.4869 80.7472L47.4865 80.7474C42.8308 83.617 36.7245 85.25 30 85.25C23.2685 85.25 17.1844 83.6173 12.5206 80.7472C7.84967 77.8727 4.5 73.5094 4.5 68.3962C4.5 63.2265 7.86673 58.9811 12.7484 56.0256L13.4467 55.6028L12.9664 54.9427C10.1395 51.0577 7.3799 46.9764 5.1985 42.9074ZM19.5 28.0884C19.5 22.35 24.2397 17.621 30 17.621C35.7532 17.621 40.5 22.3503 40.5 28.0884C40.5 33.8192 35.7528 38.5557 30 38.5557C24.24 38.5557 19.5 33.8195 19.5 28.0884ZM34.5 28.0884C34.5 25.5632 32.5272 23.5992 30 23.5992C27.4747 23.5992 25.5028 25.5604 25.5 28.0829C25.4922 28.6747 25.6032 29.262 25.8264 29.8103C26.0502 30.3603 26.3824 30.8597 26.803 31.2791C27.2237 31.6986 27.7243 32.0295 28.2753 32.2524C28.8245 32.4747 29.4128 32.5852 30.0053 32.5775C32.5299 32.5747 34.5 30.6117 34.5 28.0884Z" fill="#DE2C2C" stroke="white" stroke-width="1.5"/>
-                            </svg>
-                        </div>
-                        <hr class="w-50 mx-auto mb-4 mt-2">
-                        <div class="text-center mb-2 mt-2">
-                            <span class="fw-bold">Globalny zasięg</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-muted">Transport na terenie całej Europy i poza jej granicami.</p>
-                        </div>
+                <div class="bg-white h-full rounded p-4 xl:p-12">
+                    <div class="text-center content-center mb-6 min-h-[100px]">
+                        <svg width="60" height="86" viewBox="0 0 60 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4989 40.0936C12.8416 44.478 16.0537 49.2007 19.2747 53.5004L19.2751 53.5009C23.8334 59.5768 26.8431 62.8684 28.8059 65.015C29.0297 65.2597 29.2398 65.4896 29.4371 65.707L29.9914 66.3178L30.5469 65.7081C30.7369 65.4995 30.9387 65.2796 31.153 65.046C33.1222 62.8996 36.1444 59.6054 40.7177 53.5004C43.9394 49.1998 47.1437 44.4774 49.4935 40.0938L49.4937 40.0934C50.6687 37.8981 51.603 35.7665 52.2453 33.8788C52.883 32.0046 53.25 30.3213 53.25 29.0381C53.25 16.7062 42.919 6.72826 30 6.72826C17.0734 6.72826 6.75001 16.7064 6.75001 29.0381C6.75001 30.3202 7.1127 32.0028 7.74776 33.8778C8.38724 35.7658 9.31976 37.8977 10.4989 40.0936ZM10.4989 40.0936C10.4987 40.0934 10.4986 40.0931 10.4985 40.0929L11.16 39.7395M10.4989 40.0936C10.499 40.0938 10.4991 40.0941 10.4992 40.0943L11.16 39.7395M11.16 39.7395C8.83499 35.4096 7.50001 31.3638 7.50001 29.0381C7.50001 17.1477 17.46 7.47826 30 7.47826C42.5325 7.47826 52.5 17.1477 52.5 29.0381C52.5 31.3638 51.15 35.4096 48.8325 39.7395C46.5075 44.0769 43.3275 48.7657 40.1175 53.0508C35.5664 59.126 32.564 62.3986 30.5991 64.5403C30.5661 64.5763 30.5334 64.6119 30.501 64.6473C30.5167 64.6646 30.5323 64.6818 30.5479 64.6989L29.9925 65.203L29.4381 64.6978C29.4537 64.6808 29.4693 64.6636 29.485 64.6464C29.444 64.6015 29.4026 64.5561 29.3606 64.5103C27.4018 62.368 24.4116 59.0977 19.875 53.0508C16.665 48.7657 13.4775 44.0769 11.16 39.7395ZM42.8259 60.3836L43.3795 60.686C47.2315 62.79 49.5 65.627 49.5 68.3962C49.5 70.9589 47.7968 73.5249 44.3363 75.6527C44.336 75.6529 44.3357 75.6531 44.3353 75.6533L43.9425 75.0144C40.5975 77.0784 35.5875 78.5217 29.9925 78.5217C24.4125 78.5217 19.4175 77.0784 16.065 75.0144L42.8259 60.3836ZM42.8259 60.3836L42.4331 60.8772C39.7327 64.2708 37.1663 67.3279 35.2747 69.5367C34.3291 70.641 33.5524 71.5328 33.0125 72.1483C32.7426 72.456 32.5318 72.6946 32.3887 72.8561C32.3172 72.9368 32.2626 72.9983 32.2259 73.0394L32.1845 73.0859L32.1772 73.094C31.8979 73.3898 31.5609 73.6258 31.1867 73.7876C30.8099 73.9506 30.4034 74.0347 29.9925 74.0347C29.5816 74.0347 29.1751 73.9506 28.7982 73.7876C28.424 73.6258 28.0869 73.3897 27.8076 73.0939L27.8002 73.0856L27.7589 73.0393C27.7223 72.9982 27.6677 72.9369 27.5963 72.8564C27.4534 72.6954 27.2429 72.4574 26.9733 72.1504C26.4341 71.5365 25.6585 70.6467 24.7138 69.5448C22.8241 67.3406 20.2595 64.2892 17.5591 60.8993L17.1666 60.4065L16.6134 60.7081C12.7701 62.804 10.5 65.6258 10.5 68.3962C10.5 70.9602 12.2123 73.5262 15.6722 75.6533L42.8259 60.3836ZM5.1985 42.9074L5.19847 42.9073C2.60717 38.0748 0.75 33.5018 0.75 29.0381C0.75 13.414 13.9263 0.75 30 0.75C46.0663 0.75 59.25 13.4141 59.25 29.0381C59.25 33.5013 57.3858 38.0739 54.794 42.9073L54.7937 42.9078C52.62 46.9691 49.8604 51.0502 47.0409 54.928L46.561 55.588L47.2591 56.0106C52.1394 58.9654 55.5 63.2179 55.5 68.3962C55.5 73.51 52.1572 77.8731 47.4869 80.7472L47.4865 80.7474C42.8308 83.617 36.7245 85.25 30 85.25C23.2685 85.25 17.1844 83.6173 12.5206 80.7472C7.84967 77.8727 4.5 73.5094 4.5 68.3962C4.5 63.2265 7.86673 58.9811 12.7484 56.0256L13.4467 55.6028L12.9664 54.9427C10.1395 51.0577 7.3799 46.9764 5.1985 42.9074ZM19.5 28.0884C19.5 22.35 24.2397 17.621 30 17.621C35.7532 17.621 40.5 22.3503 40.5 28.0884C40.5 33.8192 35.7528 38.5557 30 38.5557C24.24 38.5557 19.5 33.8195 19.5 28.0884ZM34.5 28.0884C34.5 25.5632 32.5272 23.5992 30 23.5992C27.4747 23.5992 25.5028 25.5604 25.5 28.0829C25.4922 28.6747 25.6032 29.262 25.8264 29.8103C26.0502 30.3603 26.3824 30.8597 26.803 31.2791C27.2237 31.6986 27.7243 32.0295 28.2753 32.2524C28.8245 32.4747 29.4128 32.5852 30.0053 32.5775C32.5299 32.5747 34.5 30.6117 34.5 28.0884Z" fill="#DE2C2C" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <hr class="w-1/2 mx-auto mb-6 mt-2">
+                    <div class="text-center mb-2 mt-2">
+                        <span class="font-bold">Globalny zasięg</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">Transport na terenie całej Europy i poza jej granicami.</p>
                     </div>
                 </div>
 
                 <!-- Indywidualne podejście -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 rounded p-3 p-xl-5">
-                        <div class="text-center align-content-center mb-4" style="min-height: 100px;">
-                            <svg width="109" height="63" viewBox="0 0 109 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.3158 41.9422C15.033 41.9423 14.7542 41.8754 14.5023 41.7469L0.963469 34.7732C0.546047 34.5584 0.23064 34.187 0.086185 33.7404C-0.0582699 33.2937 -0.0200239 32.808 0.192564 32.3894L16.0974 0.974106C16.203 0.765507 16.3487 0.579806 16.5262 0.427649C16.7037 0.275492 16.9095 0.159875 17.1318 0.087429C17.3541 0.0149827 17.5885 -0.0128673 17.8216 0.00547533C18.0547 0.023818 18.2818 0.0879917 18.49 0.194318L31.3699 6.76656C31.7834 6.97698 32.0981 7.34084 32.2468 7.78034C32.3956 8.21984 32.3664 8.70007 32.1656 9.11835L16.918 40.928C16.815 41.1419 16.6703 41.3331 16.4925 41.4905C16.3147 41.6479 16.1073 41.7682 15.8825 41.8446C15.6999 41.9068 15.5087 41.9398 15.3158 41.9422ZM4.159 32.4214L14.5041 37.7502L28.2134 9.1521L18.4616 4.17852L4.159 32.4214Z" fill="#DE2C2C"/>
-                                <path d="M33.7181 17.2239C33.4125 17.2238 33.1121 17.1448 32.8459 16.9947L27.6841 14.0869C27.4808 13.9725 27.302 13.8192 27.158 13.6357C27.0139 13.4522 26.9075 13.2421 26.8446 13.0175C26.7818 12.7928 26.7638 12.558 26.7917 12.3264C26.8196 12.0948 26.8929 11.8709 27.0073 11.6677C27.1217 11.4644 27.275 11.2856 27.4585 11.1416C27.642 10.9975 27.8521 10.8911 28.0768 10.8282C28.3014 10.7654 28.5363 10.7474 28.7679 10.7753C28.9995 10.8032 29.2233 10.8765 29.4266 10.9909L33.6897 13.3906C35.354 12.3817 38.9563 10.2093 41.2619 8.90731C45.0259 6.77577 47.6761 7.06886 50.7189 9.95176C51.052 10.2777 51.2437 10.7215 51.2525 11.1875C51.2614 11.6535 51.0868 12.1043 50.7663 12.4427C50.4459 12.7811 50.0052 12.98 49.5395 12.9965C49.0737 13.013 48.6201 12.8458 48.2765 12.5309C46.3865 10.7404 45.4025 10.6481 43.0098 11.998C40.047 13.6731 34.7021 16.9308 34.6471 16.9716C34.3665 17.1396 34.0451 17.2269 33.7181 17.2239Z" fill="#DE2C2C"/>
-                                <path d="M80.4467 48.1289C79.1524 48.1622 77.8755 47.8251 76.7663 47.1573C75.1321 46.0667 67.9417 39.0148 66.5171 37.6133C66.2031 37.279 66.0305 36.8362 66.0355 36.3776C66.0406 35.9189 66.2229 35.48 66.5442 35.1527C66.8655 34.8254 67.301 34.6351 67.7595 34.6216C68.218 34.6081 68.6639 34.7725 69.0039 35.0804C72.2012 38.2368 77.6864 43.5035 78.7326 44.2016C79.4069 44.5131 80.1528 44.6373 80.8917 44.5611C81.6306 44.4848 82.3353 44.2109 82.9317 43.7682C83.2111 43.5259 83.4338 43.2253 83.5842 42.8876C83.7346 42.5499 83.8091 42.1833 83.8023 41.8136C83.7955 41.444 83.7077 41.0803 83.545 40.7483C83.3823 40.4164 83.1487 40.1241 82.8607 39.8923C81.0453 37.8496 73.5032 30.5935 71.8477 29.0019C66.0711 26.8845 60.4694 24.3176 55.0939 21.3248L53.2252 22.5469C52.8057 24.4944 51.6864 26.2204 50.0794 27.398C49.5154 27.8423 48.8606 28.1572 48.1614 28.3205C47.4621 28.4838 46.7356 28.4915 46.0331 28.3429C45.1806 28.2367 44.3597 27.9537 43.6228 27.512C42.886 27.0704 42.2495 26.4797 41.754 25.778C40.8094 23.7598 40.7034 21.4494 41.4591 19.3532C42.9743 13.289 45.4327 11.7276 48.8343 9.56764L49.5821 9.08982C53.33 6.68296 56.5469 5.40049 60.0781 6.99026C62.2736 7.97965 70.0661 10.9975 72.2794 11.8537L79.6971 9.42199C80.1415 9.28686 80.6211 9.33114 81.0332 9.54535C81.4453 9.75956 81.7571 10.1267 81.9018 10.568C82.0465 11.0093 82.0126 11.4898 81.8074 11.9064C81.6021 12.323 81.2419 12.6427 80.8038 12.7969L72.7839 15.4258C72.3955 15.5525 71.9756 15.5425 71.5937 15.3974C71.1728 15.234 61.2647 11.4221 58.6269 10.232C57.0442 9.52146 55.3727 9.59429 51.5076 12.0775L50.7438 12.566C47.6406 14.5359 46.0828 15.5271 44.9105 20.2147C44.3101 22.6162 44.5872 23.5896 44.8057 23.9449C45.0863 24.4138 45.7364 24.6039 46.772 24.8632C46.9943 24.9006 47.2221 24.8882 47.439 24.8268C47.6559 24.7653 47.8564 24.6564 48.026 24.5079C48.5271 24.1305 48.9455 23.6544 49.2556 23.1092C49.5656 22.5639 49.7608 21.9608 49.829 21.3373C49.8522 21.0695 49.9358 20.8104 50.0737 20.5797C50.2115 20.3489 50.4 20.1524 50.6247 20.0051L54.0441 17.7687C54.3136 17.5935 54.6256 17.4946 54.9469 17.4827C55.2681 17.4708 55.5866 17.5463 55.8683 17.7012C55.9891 17.767 67.9648 24.3161 73.2102 25.6945C73.5018 25.7724 73.7692 25.922 73.9882 26.1297C74.3718 26.4974 83.4025 35.1443 85.5233 37.537C86.111 38.1058 86.577 38.7881 86.8931 39.5425C87.2092 40.2968 87.3687 41.1075 87.3621 41.9254C87.3554 42.7433 87.1827 43.5513 86.8544 44.3004C86.5261 45.0495 86.0491 45.7241 85.4523 46.2834C84.0856 47.5233 82.2912 48.1849 80.4467 48.1289Z" fill="#DE2C2C"/>
-                                <path d="M84.1947 40.4894C83.7876 40.4891 83.3931 40.349 83.077 40.0926C82.7608 39.8362 82.5424 39.479 82.4581 39.0808C82.3739 38.6826 82.4289 38.2676 82.6141 37.9051C82.7992 37.5426 83.1032 37.2547 83.4753 37.0896L89.7065 34.3293C89.9206 34.2281 90.1529 34.1708 90.3895 34.1608C90.6262 34.1507 90.8625 34.1881 91.0845 34.2707C91.3064 34.3533 91.5097 34.4795 91.6822 34.6418C91.8547 34.8041 91.993 34.9993 92.0889 35.2159C92.1849 35.4324 92.2366 35.666 92.2409 35.9028C92.2453 36.1396 92.2022 36.3749 92.1143 36.5949C92.0264 36.8148 91.8953 37.0149 91.7289 37.1835C91.5625 37.352 91.3641 37.4856 91.1453 37.5763L84.9123 40.3437C84.6858 40.4416 84.4414 40.4912 84.1947 40.4894Z" fill="#DE2C2C"/>
-                                <path d="M92.3425 41.9423C91.9885 41.9422 91.6426 41.8362 91.3492 41.6381C91.0558 41.44 90.8283 41.1587 90.6959 40.8303L77.2885 7.56771C77.1989 7.34589 77.155 7.10824 77.1595 6.86904C77.164 6.62984 77.2167 6.39401 77.3146 6.17571C77.4125 5.9574 77.5535 5.76111 77.7291 5.59862C77.9047 5.43614 78.1113 5.3108 78.3365 5.23013L92.664 0.103777C93.0974 -0.05126 93.5741 -0.0319799 93.9936 0.157555C94.4131 0.34709 94.7426 0.692075 94.9128 1.11981L108.057 34.1125C108.143 34.3306 108.185 34.5636 108.181 34.798C108.176 35.0324 108.125 35.2636 108.031 35.4783C107.937 35.693 107.801 35.8868 107.631 36.0487C107.462 36.2106 107.262 36.3374 107.043 36.4216L92.9784 41.818C92.7758 41.898 92.5603 41.9402 92.3425 41.9423ZM81.2691 7.95139L93.3319 37.8764L104.085 33.7554L92.2466 4.0258L81.2691 7.95139ZM72.4446 53.5165C70.9803 53.5605 69.5503 53.0684 68.4231 52.1328C66.0446 50.0191 59.9307 43.9086 59.6713 43.6493C59.3478 43.3143 59.1687 42.8656 59.1728 42.3999C59.1768 41.9341 59.3636 41.4886 59.693 41.1593C60.0223 40.8299 60.4678 40.6431 60.9336 40.6391C61.3993 40.635 61.848 40.8141 62.183 41.1376C62.2452 41.1998 68.4835 47.4346 70.782 49.4862C71.2584 49.7764 71.7979 49.9474 72.3545 49.9845C72.9112 50.0216 73.4685 49.9238 73.9793 49.6993C74.8134 49.4148 75.5533 48.9067 76.1184 48.2304C76.6835 47.5542 77.052 46.7357 77.1837 45.8643C77.2234 45.6344 77.3079 45.4146 77.4325 45.2174C77.5571 45.0202 77.7193 44.8495 77.9099 44.715C78.1005 44.5805 78.3158 44.4848 78.5433 44.4335C78.7709 44.3821 79.0063 44.3761 79.2362 44.4158C79.4661 44.4554 79.6859 44.54 79.8831 44.6646C80.0803 44.7892 80.251 44.9514 80.3856 45.142C80.5201 45.3326 80.6157 45.5478 80.6671 45.7754C80.7184 46.0029 80.7244 46.2384 80.6847 46.4683C80.4433 47.9605 79.8022 49.3595 78.8295 50.5167C77.8569 51.6738 76.589 52.546 75.1605 53.0405C74.2882 53.3501 73.3702 53.511 72.4446 53.5165Z" fill="#DE2C2C"/>
-                                <path d="M64.1777 57.8224C62.7165 57.8847 61.2885 57.375 60.1971 56.4014L53.8877 50.0921L56.4012 47.5786L62.7105 53.888C63.101 54.1072 63.5331 54.242 63.9789 54.2836C64.4247 54.3252 64.8743 54.2727 65.2986 54.1295C66.1134 53.9295 66.8595 53.5142 67.4588 52.927C68.0582 52.3399 68.4887 51.6024 68.7055 50.7919C68.7712 50.5658 68.8812 50.355 69.029 50.1718C69.1769 49.9886 69.3598 49.8366 69.5669 49.7247C69.7741 49.6127 70.0014 49.5431 70.2357 49.5199C70.47 49.4966 70.7066 49.5202 70.9317 49.5891C71.1569 49.6581 71.366 49.7712 71.547 49.9218C71.7281 50.0723 71.8774 50.2574 71.9862 50.4661C72.0951 50.6749 72.1614 50.9033 72.1812 51.1379C72.201 51.3725 72.174 51.6087 72.1017 51.8328C71.6076 53.5542 70.5681 55.0687 69.1395 56.1488C67.7109 57.2289 65.9687 57.8162 64.1777 57.8224Z" fill="#DE2C2C"/>
-                                <path d="M57.4066 62.5668C55.9545 62.5977 54.5344 62.1377 53.3762 61.2612C51.7761 59.9801 50.1685 58.7083 48.5536 57.4458C48.3659 57.3036 48.2084 57.1255 48.0902 56.9219C47.972 56.7182 47.8954 56.4931 47.865 56.2597C47.8345 56.0262 47.8508 55.789 47.9129 55.5618C47.9749 55.3347 48.0815 55.1222 48.2265 54.9366C48.3714 54.751 48.5518 54.5961 48.7572 54.4809C48.9625 54.3657 49.1887 54.2925 49.4226 54.2655C49.6565 54.2385 49.8935 54.2582 50.1197 54.3236C50.3459 54.389 50.5568 54.4987 50.7402 54.6464C50.7402 54.6464 52.9588 56.3782 55.5966 58.4885C56.1585 58.823 56.7977 59.0058 57.4516 59.0192C58.1054 59.0326 58.7516 58.8761 59.3268 58.5649C59.841 58.3437 60.2762 57.9719 60.5749 57.4985C60.8736 57.0251 61.0218 56.4722 61 55.9129C60.9857 55.442 61.1589 54.9847 61.4817 54.6416C61.8045 54.2985 62.2504 54.0977 62.7212 54.0833C63.1907 54.075 63.6448 54.2505 63.9867 54.5725C64.3285 54.8944 64.5309 55.3372 64.5508 55.8063C64.5927 57.0436 64.2702 58.2659 63.6235 59.3216C62.9768 60.3772 62.0343 61.2197 60.913 61.7444C59.8228 62.284 58.623 62.5654 57.4066 62.5668Z" fill="#DE2C2C"/>
-                                <path d="M44.0951 61.7439C43.5178 61.7418 42.9464 61.6272 42.413 61.4064C40.9646 60.6957 39.7706 59.5556 38.9937 58.1416C37.7331 58.3862 36.4267 58.1899 35.2937 57.5856C34.3432 56.9627 33.5262 56.1569 32.8901 55.2152C32.254 54.2735 31.8115 53.2148 31.5883 52.1005C31.4947 51.6468 31.582 51.1745 31.8317 50.7843C33.2758 48.5319 35.4535 45.0309 35.7786 44.3008C36.0711 43.7184 36.486 43.206 36.9949 42.7989C37.5039 42.3918 38.0948 42.0994 38.7272 41.9419C39.5875 41.7165 40.4873 41.6862 41.3607 41.8534C42.2342 42.0206 43.0592 42.381 43.7754 42.9082C44.5691 43.4336 45.2065 44.1633 45.6203 45.0205C46.0342 45.8776 46.2093 46.8305 46.1272 47.7788C46.9721 47.8152 47.7993 48.0324 48.5531 48.4157C49.3069 48.799 49.9698 49.3396 50.4969 50.0009C51.0088 50.801 51.3356 51.7053 51.4533 52.6479C51.571 53.5904 51.4767 54.5474 51.1772 55.4488C50.2455 58.0491 48.3327 60.1813 45.8483 61.3887C45.2936 61.6232 44.6974 61.744 44.0951 61.7439ZM41.9849 56.2001C42.5427 57.1433 43.5392 58.4969 44.4717 58.1079C46.02 57.3015 47.212 55.9467 47.8147 54.3084C47.9333 53.9458 47.9786 53.5633 47.9481 53.1831C47.9176 52.8028 47.8119 52.4324 47.637 52.0934C47.3668 51.8287 47.046 51.6212 46.6939 51.4833C46.3417 51.3453 45.9653 51.2798 45.5872 51.2905L41.9849 56.2001ZM35.251 52.0259C35.5337 53.0128 36.1462 53.873 36.9865 54.4629C37.2488 54.5975 37.5359 54.6769 37.8301 54.6962C38.1244 54.7154 38.4194 54.6741 38.697 54.5748L42.4894 48.0736C42.6401 47.6719 42.6498 47.2308 42.5168 46.8228C42.3838 46.4148 42.1161 46.0642 41.7575 45.8284C41.4848 45.6134 41.17 45.4579 40.8335 45.3719C40.4969 45.2859 40.1461 45.2714 39.8036 45.3293C39.5013 45.3791 39.2253 45.5316 39.0221 45.7609C38.5531 46.8001 36.2973 50.381 35.251 52.0259Z" fill="#DE2C2C"/>
-                                <path d="M30.519 54.801C30.0981 54.8022 29.6793 54.7423 29.2756 54.6233C26.2328 53.7086 25.041 49.7688 24.9148 49.3229C24.8511 49.0968 24.8329 48.8602 24.8613 48.6269C24.8896 48.3937 24.964 48.1684 25.08 47.9641C26.5898 45.3415 28.2597 42.8144 30.0803 40.3971C30.9942 39.2081 32.3185 38.4025 33.7945 38.1374C35.2705 37.8724 36.7924 38.1669 38.0629 38.9637C39.7397 40.1271 40.9689 42.6583 38.9119 45.9657C38.7889 46.164 38.628 46.3361 38.4384 46.4722C38.2489 46.6083 38.0344 46.7057 37.8072 46.7589C37.58 46.8121 37.3445 46.82 37.1142 46.7822C36.8839 46.7444 36.6634 46.6616 36.4651 46.5386C36.2668 46.4156 36.0947 46.2547 35.9586 46.0651C35.8225 45.8755 35.7251 45.661 35.6719 45.4338C35.6187 45.2066 35.6108 44.9712 35.6486 44.7409C35.6864 44.5106 35.7692 44.29 35.8923 44.0918C36.3488 43.3546 36.7449 42.3759 36.0361 41.8839C35.5181 41.6009 34.9157 41.5138 34.3387 41.6384C33.7618 41.7629 33.249 42.0909 32.8939 42.5624C31.3335 44.6358 29.8895 46.7944 28.5686 49.0281C28.9577 49.957 29.6202 51.021 30.297 51.2218C30.8956 51.3994 31.718 50.7848 32.1638 50.4047C32.5205 50.0966 32.9849 49.9428 33.4549 49.9771C33.9249 50.0114 34.3621 50.231 34.6702 50.5876C34.9783 50.9443 35.1321 51.4087 35.0978 51.8787C35.0635 52.3487 34.8438 52.7859 34.4872 53.094C33.4192 54.1313 32.0066 54.739 30.519 54.801Z" fill="#DE2C2C"/>
-                                <path d="M26.6201 50.6108C26.4248 50.6106 26.231 50.5782 26.0463 50.5149C25.7461 50.4136 18.6659 47.9393 18.6659 42.3937C18.6657 42.2075 18.6945 42.0223 18.7511 41.8449C19.3938 40.0761 20.2741 38.4029 21.3676 36.8713C22.1814 35.8988 23.3054 35.2365 24.5503 34.9958C25.7953 34.7551 27.0851 34.9507 28.2027 35.5497C29.2548 36.0159 30.0938 36.8596 30.5542 37.9143C31.0146 38.9689 31.0629 40.1578 30.6895 41.2462C29.5278 44.9871 28.336 49.2626 28.3235 49.307C28.2192 49.6805 27.9956 50.0096 27.6867 50.244C27.3778 50.4785 27.0007 50.6054 26.613 50.6055L26.6201 50.6108ZM22.2327 42.669C22.4103 44.3316 24.112 45.5964 25.4761 46.3548C25.9398 44.7349 26.6272 42.3777 27.3022 40.1982C27.3641 40.0598 27.3958 39.9097 27.3951 39.758C27.3944 39.6063 27.3614 39.4566 27.2981 39.3187C27.2349 39.1808 27.143 39.058 27.0285 38.9585C26.914 38.859 26.7796 38.7851 26.6343 38.7417C26.2673 38.5347 25.8472 38.441 25.427 38.4726C25.0068 38.5043 24.6055 38.6597 24.2736 38.9193C23.4501 40.0858 22.7651 41.3442 22.2327 42.669Z" fill="#DE2C2C"/>
-                                <path d="M21.9005 41.1054C21.5429 41.105 21.1937 40.9966 20.8987 40.7945L16.2395 37.5972C15.8506 37.331 15.5834 36.9213 15.4966 36.4581C15.4098 35.9949 15.5106 35.5162 15.7768 35.1273C16.0429 34.7384 16.4527 34.4712 16.9159 34.3844C17.3791 34.2976 17.8578 34.3984 18.2467 34.6646L22.9059 37.8619C23.2197 38.076 23.4566 38.3852 23.5818 38.7439C23.7069 39.1027 23.7138 39.4921 23.6013 39.855C23.4888 40.2179 23.2629 40.5352 22.9568 40.7602C22.6506 40.9853 22.2804 41.1063 21.9005 41.1054Z" fill="#DE2C2C"/>
-                            </svg>
-                        </div>
-                        <hr class="w-50 mx-auto mb-4 mt-2">
-                        <div class="text-center mb-2 mt-2">
-                            <span class="fw-bold">Indywidualne podejście</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-muted">Zrozumiemy Twoje potrzeby i dostosujemy naszą ofertę.</p>
-                        </div>
+                <div class="bg-white h-full rounded p-4 xl:p-12">
+                    <div class="text-center content-center mb-6 min-h-[100px]">
+                        <svg width="109" height="63" viewBox="0 0 109 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.3158 41.9422C15.033 41.9423 14.7542 41.8754 14.5023 41.7469L0.963469 34.7732C0.546047 34.5584 0.23064 34.187 0.086185 33.7404C-0.0582699 33.2937 -0.0200239 32.808 0.192564 32.3894L16.0974 0.974106C16.203 0.765507 16.3487 0.579806 16.5262 0.427649C16.7037 0.275492 16.9095 0.159875 17.1318 0.087429C17.3541 0.0149827 17.5885 -0.0128673 17.8216 0.00547533C18.0547 0.023818 18.2818 0.0879917 18.49 0.194318L31.3699 6.76656C31.7834 6.97698 32.0981 7.34084 32.2468 7.78034C32.3956 8.21984 32.3664 8.70007 32.1656 9.11835L16.918 40.928C16.815 41.1419 16.6703 41.3331 16.4925 41.4905C16.3147 41.6479 16.1073 41.7682 15.8825 41.8446C15.6999 41.9068 15.5087 41.9398 15.3158 41.9422ZM4.159 32.4214L14.5041 37.7502L28.2134 9.1521L18.4616 4.17852L4.159 32.4214Z" fill="#DE2C2C"/>
+                            <path d="M33.7181 17.2239C33.4125 17.2238 33.1121 17.1448 32.8459 16.9947L27.6841 14.0869C27.4808 13.9725 27.302 13.8192 27.158 13.6357C27.0139 13.4522 26.9075 13.2421 26.8446 13.0175C26.7818 12.7928 26.7638 12.558 26.7917 12.3264C26.8196 12.0948 26.8929 11.8709 27.0073 11.6677C27.1217 11.4644 27.275 11.2856 27.4585 11.1416C27.642 10.9975 27.8521 10.8911 28.0768 10.8282C28.3014 10.7654 28.5363 10.7474 28.7679 10.7753C28.9995 10.8032 29.2233 10.8765 29.4266 10.9909L33.6897 13.3906C35.354 12.3817 38.9563 10.2093 41.2619 8.90731C45.0259 6.77577 47.6761 7.06886 50.7189 9.95176C51.052 10.2777 51.2437 10.7215 51.2525 11.1875C51.2614 11.6535 51.0868 12.1043 50.7663 12.4427C50.4459 12.7811 50.0052 12.98 49.5395 12.9965C49.0737 13.013 48.6201 12.8458 48.2765 12.5309C46.3865 10.7404 45.4025 10.6481 43.0098 11.998C40.047 13.6731 34.7021 16.9308 34.6471 16.9716C34.3665 17.1396 34.0451 17.2269 33.7181 17.2239Z" fill="#DE2C2C"/>
+                            <path d="M80.4467 48.1289C79.1524 48.1622 77.8755 47.8251 76.7663 47.1573C75.1321 46.0667 67.9417 39.0148 66.5171 37.6133C66.2031 37.279 66.0305 36.8362 66.0355 36.3776C66.0406 35.9189 66.2229 35.48 66.5442 35.1527C66.8655 34.8254 67.301 34.6351 67.7595 34.6216C68.218 34.6081 68.6639 34.7725 69.0039 35.0804C72.2012 38.2368 77.6864 43.5035 78.7326 44.2016C79.4069 44.5131 80.1528 44.6373 80.8917 44.5611C81.6306 44.4848 82.3353 44.2109 82.9317 43.7682C83.2111 43.5259 83.4338 43.2253 83.5842 42.8876C83.7346 42.5499 83.8091 42.1833 83.8023 41.8136C83.7955 41.444 83.7077 41.0803 83.545 40.7483C83.3823 40.4164 83.1487 40.1241 82.8607 39.8923C81.0453 37.8496 73.5032 30.5935 71.8477 29.0019C66.0711 26.8845 60.4694 24.3176 55.0939 21.3248L53.2252 22.5469C52.8057 24.4944 51.6864 26.2204 50.0794 27.398C49.5154 27.8423 48.8606 28.1572 48.1614 28.3205C47.4621 28.4838 46.7356 28.4915 46.0331 28.3429C45.1806 28.2367 44.3597 27.9537 43.6228 27.512C42.886 27.0704 42.2495 26.4797 41.754 25.778C40.8094 23.7598 40.7034 21.4494 41.4591 19.3532C42.9743 13.289 45.4327 11.7276 48.8343 9.56764L49.5821 9.08982C53.33 6.68296 56.5469 5.40049 60.0781 6.99026C62.2736 7.97965 70.0661 10.9975 72.2794 11.8537L79.6971 9.42199C80.1415 9.28686 80.6211 9.33114 81.0332 9.54535C81.4453 9.75956 81.7571 10.1267 81.9018 10.568C82.0465 11.0093 82.0126 11.4898 81.8074 11.9064C81.6021 12.323 81.2419 12.6427 80.8038 12.7969L72.7839 15.4258C72.3955 15.5525 71.9756 15.5425 71.5937 15.3974C71.1728 15.234 61.2647 11.4221 58.6269 10.232C57.0442 9.52146 55.3727 9.59429 51.5076 12.0775L50.7438 12.566C47.6406 14.5359 46.0828 15.5271 44.9105 20.2147C44.3101 22.6162 44.5872 23.5896 44.8057 23.9449C45.0863 24.4138 45.7364 24.6039 46.772 24.8632C46.9943 24.9006 47.2221 24.8882 47.439 24.8268C47.6559 24.7653 47.8564 24.6564 48.026 24.5079C48.5271 24.1305 48.9455 23.6544 49.2556 23.1092C49.5656 22.5639 49.7608 21.9608 49.829 21.3373C49.8522 21.0695 49.9358 20.8104 50.0737 20.5797C50.2115 20.3489 50.4 20.1524 50.6247 20.0051L54.0441 17.7687C54.3136 17.5935 54.6256 17.4946 54.9469 17.4827C55.2681 17.4708 55.5866 17.5463 55.8683 17.7012C55.9891 17.767 67.9648 24.3161 73.2102 25.6945C73.5018 25.7724 73.7692 25.922 73.9882 26.1297C74.3718 26.4974 83.4025 35.1443 85.5233 37.537C86.111 38.1058 86.577 38.7881 86.8931 39.5425C87.2092 40.2968 87.3687 41.1075 87.3621 41.9254C87.3554 42.7433 87.1827 43.5513 86.8544 44.3004C86.5261 45.0495 86.0491 45.7241 85.4523 46.2834C84.0856 47.5233 82.2912 48.1849 80.4467 48.1289Z" fill="#DE2C2C"/>
+                            <path d="M84.1947 40.4894C83.7876 40.4891 83.3931 40.349 83.077 40.0926C82.7608 39.8362 82.5424 39.479 82.4581 39.0808C82.3739 38.6826 82.4289 38.2676 82.6141 37.9051C82.7992 37.5426 83.1032 37.2547 83.4753 37.0896L89.7065 34.3293C89.9206 34.2281 90.1529 34.1708 90.3895 34.1608C90.6262 34.1507 90.8625 34.1881 91.0845 34.2707C91.3064 34.3533 91.5097 34.4795 91.6822 34.6418C91.8547 34.8041 91.993 34.9993 92.0889 35.2159C92.1849 35.4324 92.2366 35.666 92.2409 35.9028C92.2453 36.1396 92.2022 36.3749 92.1143 36.5949C92.0264 36.8148 91.8953 37.0149 91.7289 37.1835C91.5625 37.352 91.3641 37.4856 91.1453 37.5763L84.9123 40.3437C84.6858 40.4416 84.4414 40.4912 84.1947 40.4894Z" fill="#DE2C2C"/>
+                            <path d="M92.3425 41.9423C91.9885 41.9422 91.6426 41.8362 91.3492 41.6381C91.0558 41.44 90.8283 41.1587 90.6959 40.8303L77.2885 7.56771C77.1989 7.34589 77.155 7.10824 77.1595 6.86904C77.164 6.62984 77.2167 6.39401 77.3146 6.17571C77.4125 5.9574 77.5535 5.76111 77.7291 5.59862C77.9047 5.43614 78.1113 5.3108 78.3365 5.23013L92.664 0.103777C93.0974 -0.05126 93.5741 -0.0319799 93.9936 0.157555C94.4131 0.34709 94.7426 0.692075 94.9128 1.11981L108.057 34.1125C108.143 34.3306 108.185 34.5636 108.181 34.798C108.176 35.0324 108.125 35.2636 108.031 35.4783C107.937 35.693 107.801 35.8868 107.631 36.0487C107.462 36.2106 107.262 36.3374 107.043 36.4216L92.9784 41.818C92.7758 41.898 92.5603 41.9402 92.3425 41.9423ZM81.2691 7.95139L93.3319 37.8764L104.085 33.7554L92.2466 4.0258L81.2691 7.95139ZM72.4446 53.5165C70.9803 53.5605 69.5503 53.0684 68.4231 52.1328C66.0446 50.0191 59.9307 43.9086 59.6713 43.6493C59.3478 43.3143 59.1687 42.8656 59.1728 42.3999C59.1768 41.9341 59.3636 41.4886 59.693 41.1593C60.0223 40.8299 60.4678 40.6431 60.9336 40.6391C61.3993 40.635 61.848 40.8141 62.183 41.1376C62.2452 41.1998 68.4835 47.4346 70.782 49.4862C71.2584 49.7764 71.7979 49.9474 72.3545 49.9845C72.9112 50.0216 73.4685 49.9238 73.9793 49.6993C74.8134 49.4148 75.5533 48.9067 76.1184 48.2304C76.6835 47.5542 77.052 46.7357 77.1837 45.8643C77.2234 45.6344 77.3079 45.4146 77.4325 45.2174C77.5571 45.0202 77.7193 44.8495 77.9099 44.715C78.1005 44.5805 78.3158 44.4848 78.5433 44.4335C78.7709 44.3821 79.0063 44.3761 79.2362 44.4158C79.4661 44.4554 79.6859 44.54 79.8831 44.6646C80.0803 44.7892 80.251 44.9514 80.3856 45.142C80.5201 45.3326 80.6157 45.5478 80.6671 45.7754C80.7184 46.0029 80.7244 46.2384 80.6847 46.4683C80.4433 47.9605 79.8022 49.3595 78.8295 50.5167C77.8569 51.6738 76.589 52.546 75.1605 53.0405C74.2882 53.3501 73.3702 53.511 72.4446 53.5165Z" fill="#DE2C2C"/>
+                            <path d="M64.1777 57.8224C62.7165 57.8847 61.2885 57.375 60.1971 56.4014L53.8877 50.0921L56.4012 47.5786L62.7105 53.888C63.101 54.1072 63.5331 54.242 63.9789 54.2836C64.4247 54.3252 64.8743 54.2727 65.2986 54.1295C66.1134 53.9295 66.8595 53.5142 67.4588 52.927C68.0582 52.3399 68.4887 51.6024 68.7055 50.7919C68.7712 50.5658 68.8812 50.355 69.029 50.1718C69.1769 49.9886 69.3598 49.8366 69.5669 49.7247C69.7741 49.6127 70.0014 49.5431 70.2357 49.5199C70.47 49.4966 70.7066 49.5202 70.9317 49.5891C71.1569 49.6581 71.366 49.7712 71.547 49.9218C71.7281 50.0723 71.8774 50.2574 71.9862 50.4661C72.0951 50.6749 72.1614 50.9033 72.1812 51.1379C72.201 51.3725 72.174 51.6087 72.1017 51.8328C71.6076 53.5542 70.5681 55.0687 69.1395 56.1488C67.7109 57.2289 65.9687 57.8162 64.1777 57.8224Z" fill="#DE2C2C"/>
+                            <path d="M57.4066 62.5668C55.9545 62.5977 54.5344 62.1377 53.3762 61.2612C51.7761 59.9801 50.1685 58.7083 48.5536 57.4458C48.3659 57.3036 48.2084 57.1255 48.0902 56.9219C47.972 56.7182 47.8954 56.4931 47.865 56.2597C47.8345 56.0262 47.8508 55.789 47.9129 55.5618C47.9749 55.3347 48.0815 55.1222 48.2265 54.9366C48.3714 54.751 48.5518 54.5961 48.7572 54.4809C48.9625 54.3657 49.1887 54.2925 49.4226 54.2655C49.6565 54.2385 49.8935 54.2582 50.1197 54.3236C50.3459 54.389 50.5568 54.4987 50.7402 54.6464C50.7402 54.6464 52.9588 56.3782 55.5966 58.4885C56.1585 58.823 56.7977 59.0058 57.4516 59.0192C58.1054 59.0326 58.7516 58.8761 59.3268 58.5649C59.841 58.3437 60.2762 57.9719 60.5749 57.4985C60.8736 57.0251 61.0218 56.4722 61 55.9129C60.9857 55.442 61.1589 54.9847 61.4817 54.6416C61.8045 54.2985 62.2504 54.0977 62.7212 54.0833C63.1907 54.075 63.6448 54.2505 63.9867 54.5725C64.3285 54.8944 64.5309 55.3372 64.5508 55.8063C64.5927 57.0436 64.2702 58.2659 63.6235 59.3216C62.9768 60.3772 62.0343 61.2197 60.913 61.7444C59.8228 62.284 58.623 62.5654 57.4066 62.5668Z" fill="#DE2C2C"/>
+                            <path d="M44.0951 61.7439C43.5178 61.7418 42.9464 61.6272 42.413 61.4064C40.9646 60.6957 39.7706 59.5556 38.9937 58.1416C37.7331 58.3862 36.4267 58.1899 35.2937 57.5856C34.3432 56.9627 33.5262 56.1569 32.8901 55.2152C32.254 54.2735 31.8115 53.2148 31.5883 52.1005C31.4947 51.6468 31.582 51.1745 31.8317 50.7843C33.2758 48.5319 35.4535 45.0309 35.7786 44.3008C36.0711 43.7184 36.486 43.206 36.9949 42.7989C37.5039 42.3918 38.0948 42.0994 38.7272 41.9419C39.5875 41.7165 40.4873 41.6862 41.3607 41.8534C42.2342 42.0206 43.0592 42.381 43.7754 42.9082C44.5691 43.4336 45.2065 44.1633 45.6203 45.0205C46.0342 45.8776 46.2093 46.8305 46.1272 47.7788C46.9721 47.8152 47.7993 48.0324 48.5531 48.4157C49.3069 48.799 49.9698 49.3396 50.4969 50.0009C51.0088 50.801 51.3356 51.7053 51.4533 52.6479C51.571 53.5904 51.4767 54.5474 51.1772 55.4488C50.2455 58.0491 48.3327 60.1813 45.8483 61.3887C45.2936 61.6232 44.6974 61.744 44.0951 61.7439ZM41.9849 56.2001C42.5427 57.1433 43.5392 58.4969 44.4717 58.1079C46.02 57.3015 47.212 55.9467 47.8147 54.3084C47.9333 53.9458 47.9786 53.5633 47.9481 53.1831C47.9176 52.8028 47.8119 52.4324 47.637 52.0934C47.3668 51.8287 47.046 51.6212 46.6939 51.4833C46.3417 51.3453 45.9653 51.2798 45.5872 51.2905L41.9849 56.2001ZM35.251 52.0259C35.5337 53.0128 36.1462 53.873 36.9865 54.4629C37.2488 54.5975 37.5359 54.6769 37.8301 54.6962C38.1244 54.7154 38.4194 54.6741 38.697 54.5748L42.4894 48.0736C42.6401 47.6719 42.6498 47.2308 42.5168 46.8228C42.3838 46.4148 42.1161 46.0642 41.7575 45.8284C41.4848 45.6134 41.17 45.4579 40.8335 45.3719C40.4969 45.2859 40.1461 45.2714 39.8036 45.3293C39.5013 45.3791 39.2253 45.5316 39.0221 45.7609C38.5531 46.8001 36.2973 50.381 35.251 52.0259Z" fill="#DE2C2C"/>
+                            <path d="M30.519 54.801C30.0981 54.8022 29.6793 54.7423 29.2756 54.6233C26.2328 53.7086 25.041 49.7688 24.9148 49.3229C24.8511 49.0968 24.8329 48.8602 24.8613 48.6269C24.8896 48.3937 24.964 48.1684 25.08 47.9641C26.5898 45.3415 28.2597 42.8144 30.0803 40.3971C30.9942 39.2081 32.3185 38.4025 33.7945 38.1374C35.2705 37.8724 36.7924 38.1669 38.0629 38.9637C39.7397 40.1271 40.9689 42.6583 38.9119 45.9657C38.7889 46.164 38.628 46.3361 38.4384 46.4722C38.2489 46.6083 38.0344 46.7057 37.8072 46.7589C37.58 46.8121 37.3445 46.82 37.1142 46.7822C36.8839 46.7444 36.6634 46.6616 36.4651 46.5386C36.2668 46.4156 36.0947 46.2547 35.9586 46.0651C35.8225 45.8755 35.7251 45.661 35.6719 45.4338C35.6187 45.2066 35.6108 44.9712 35.6486 44.7409C35.6864 44.5106 35.7692 44.29 35.8923 44.0918C36.3488 43.3546 36.7449 42.3759 36.0361 41.8839C35.5181 41.6009 34.9157 41.5138 34.3387 41.6384C33.7618 41.7629 33.249 42.0909 32.8939 42.5624C31.3335 44.6358 29.8895 46.7944 28.5686 49.0281C28.9577 49.957 29.6202 51.021 30.297 51.2218C30.8956 51.3994 31.718 50.7848 32.1638 50.4047C32.5205 50.0966 32.9849 49.9428 33.4549 49.9771C33.9249 50.0114 34.3621 50.231 34.6702 50.5876C34.9783 50.9443 35.1321 51.4087 35.0978 51.8787C35.0635 52.3487 34.8438 52.7859 34.4872 53.094C33.4192 54.1313 32.0066 54.739 30.519 54.801Z" fill="#DE2C2C"/>
+                            <path d="M26.6201 50.6108C26.4248 50.6106 26.231 50.5782 26.0463 50.5149C25.7461 50.4136 18.6659 47.9393 18.6659 42.3937C18.6657 42.2075 18.6945 42.0223 18.7511 41.8449C19.3938 40.0761 20.2741 38.4029 21.3676 36.8713C22.1814 35.8988 23.3054 35.2365 24.5503 34.9958C25.7953 34.7551 27.0851 34.9507 28.2027 35.5497C29.2548 36.0159 30.0938 36.8596 30.5542 37.9143C31.0146 38.9689 31.0629 40.1578 30.6895 41.2462C29.5278 44.9871 28.336 49.2626 28.3235 49.307C28.2192 49.6805 27.9956 50.0096 27.6867 50.244C27.3778 50.4785 27.0007 50.6054 26.613 50.6055L26.6201 50.6108ZM22.2327 42.669C22.4103 44.3316 24.112 45.5964 25.4761 46.3548C25.9398 44.7349 26.6272 42.3777 27.3022 40.1982C27.3641 40.0598 27.3958 39.9097 27.3951 39.758C27.3944 39.6063 27.3614 39.4566 27.2981 39.3187C27.2349 39.1808 27.143 39.058 27.0285 38.9585C26.914 38.859 26.7796 38.7851 26.6343 38.7417C26.2673 38.5347 25.8472 38.441 25.427 38.4726C25.0068 38.5043 24.6055 38.6597 24.2736 38.9193C23.4501 40.0858 22.7651 41.3442 22.2327 42.669Z" fill="#DE2C2C"/>
+                            <path d="M21.9005 41.1054C21.5429 41.105 21.1937 40.9966 20.8987 40.7945L16.2395 37.5972C15.8506 37.331 15.5834 36.9213 15.4966 36.4581C15.4098 35.9949 15.5106 35.5162 15.7768 35.1273C16.0429 34.7384 16.4527 34.4712 16.9159 34.3844C17.3791 34.2976 17.8578 34.3984 18.2467 34.6646L22.9059 37.8619C23.2197 38.076 23.4566 38.3852 23.5818 38.7439C23.7069 39.1027 23.7138 39.4921 23.6013 39.855C23.4888 40.2179 23.2629 40.5352 22.9568 40.7602C22.6506 40.9853 22.2804 41.1063 21.9005 41.1054Z" fill="#DE2C2C"/>
+                        </svg>
+                    </div>
+                    <hr class="w-1/2 mx-auto mb-6 mt-2">
+                    <div class="text-center mb-2 mt-2">
+                        <span class="font-bold">Indywidualne podejście</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">Zrozumiemy Twoje potrzeby i dostosujemy naszą ofertę.</p>
                     </div>
                 </div>
 
                 <!-- Transport 24/7 -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 rounded p-3 p-xl-5">
-                        <div class="text-center align-content-center mb-4" style="min-height: 100px;">
-                            <svg width="84" height="73" viewBox="0 0 84 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M33.7931 0.00327896C33.7931 0.0051508 33.7931 0.00702291 33.7931 0.00889475C33.7745 0.0103901 33.756 0.0122619 33.7375 0.0145099C33.7189 0.0160052 33.7004 0.0178777 33.6819 0.0201256C33.6735 0.0219198 33.6652 0.0237913 33.6568 0.0257408C33.5735 0.0397154 33.4916 0.061331 33.4121 0.0903193C33.4047 0.0939959 33.3972 0.0977402 33.3899 0.101551C33.3664 0.110278 33.3433 0.119641 33.3203 0.129628L1.19049 14C0.855947 14.0491 0.550579 14.2195 0.331501 14.4795C0.112423 14.7394 -0.00535787 15.071 0.000187244 15.4123V57.5343C-0.00144022 57.7344 0.0393333 57.9326 0.119774 58.1155C0.121593 58.1211 0.123447 58.1267 0.125336 58.1323C0.13755 58.158 0.150534 58.1833 0.164271 58.2082C0.313696 58.5112 0.566537 58.7495 0.876228 58.8792L33.3203 72.8843C33.3765 72.9068 33.4341 72.9256 33.4928 72.9405C33.5057 72.9435 33.5187 72.9463 33.5317 72.9489C33.5593 72.9573 33.5871 72.9647 33.6151 72.9714C33.6244 72.9733 33.6337 72.9752 33.6429 72.977C33.6688 72.9815 33.6948 72.9852 33.7208 72.9882C33.8785 73.008 34.0384 73.0005 34.1936 72.9657C34.2253 72.9603 34.2569 72.9537 34.2882 72.9461C34.2984 72.9425 34.3086 72.9387 34.3187 72.9349C34.3206 72.9349 34.3224 72.9349 34.3243 72.9349C34.3743 72.9208 34.4235 72.9039 34.4717 72.8843L50.7466 65.8593C52.4653 68.3612 54.8324 70.3378 57.589 71.5729C60.3456 72.8079 63.3855 73.2538 66.3763 72.8619C70.0323 72.3719 73.4191 70.6554 75.9925 67.9881C78.5659 65.3208 80.1764 61.8575 80.5654 58.1548L82.0338 59.6345L84 57.6494L79.083 52.6881L74.1661 57.6494L76.1323 59.6345L77.737 58.0172C77.3944 61.0605 76.0541 63.9008 73.9292 66.0869C71.8042 68.2729 69.0166 69.6792 66.0092 70.0822C62.7248 70.5217 59.3943 69.7386 56.6402 67.8794C53.8861 66.0202 51.8968 63.2121 51.0442 59.9799C50.1828 56.7505 50.5152 53.315 51.9794 50.315C53.4437 47.315 55.9395 44.9558 59.0009 43.678C62.0613 42.3947 65.4798 42.2802 68.6177 43.356C71.7556 44.4318 74.3982 46.6243 76.0517 49.5237L76.7469 50.7339L79.1581 49.33L78.4629 48.1199C77.4598 46.363 76.1457 44.807 74.586 43.5292C72.6014 41.9223 70.2749 40.8017 67.7891 40.2553C67.7906 40.217 67.7906 40.1786 67.7891 40.1402V15.4123C67.7944 15.0736 67.6783 14.7444 67.4621 14.4853C67.2459 14.2263 66.9442 14.0549 66.6127 14.0028L34.4717 0.129628C34.2596 0.0306203 34.0262 -0.0128341 33.7931 0.00327896ZM33.896 2.93177L40.718 5.87711L11.8253 18.352C11.7953 18.3622 11.7656 18.3734 11.7364 18.3857L4.91714 15.446L33.896 2.93177ZM44.25 7.40173L52.5209 10.976L23.0887 23.6839C22.8124 23.8038 22.5819 24.0108 22.432 24.2741C22.2821 24.5373 22.2207 24.8425 22.2572 25.144C22.2532 25.1888 22.2513 25.2338 22.2516 25.2787V40.3003L19.2369 35.732C19.049 35.447 18.7643 35.2412 18.4365 35.1533C18.1087 35.0654 17.7603 35.1014 17.457 35.2547L13.9084 37.0461V20.5027L44.25 7.40173ZM56.0529 12.5006L62.8749 15.446L33.896 27.9545L27.0796 25.0148L55.9695 12.5399C55.9977 12.5278 56.0255 12.5147 56.0529 12.5006ZM2.78127 17.5742L11.1245 21.1766V39.3175C11.1248 39.5566 11.1854 39.7916 11.3008 40.0003C11.4162 40.209 11.5824 40.3845 11.7838 40.5102C11.9852 40.6359 12.215 40.7076 12.4515 40.7185C12.688 40.7294 12.9233 40.6792 13.1352 40.5726L17.6017 38.318L22.4074 45.5957C22.56 45.8924 22.8124 46.1244 23.1193 46.2499C23.1604 46.2659 23.2021 46.28 23.2445 46.292C23.2463 46.2939 23.2482 46.2958 23.25 46.2976C23.3381 46.3234 23.4284 46.3403 23.5198 46.3482C23.567 46.3525 23.6143 46.3544 23.6616 46.3538C23.7344 46.352 23.8069 46.3445 23.8786 46.3313C23.9435 46.3209 24.0076 46.3059 24.0705 46.2864C24.0863 46.2801 24.1021 46.2736 24.1177 46.2667C24.144 46.2582 24.1699 46.2488 24.1956 46.2387C24.1975 46.2368 24.1993 46.2349 24.2012 46.2331C24.2419 46.2163 24.2818 46.1975 24.3208 46.1769C24.3226 46.175 24.3245 46.1732 24.3263 46.1713C24.57 46.0346 24.7674 45.8272 24.8929 45.5758C25.0184 45.3245 25.0661 45.0409 25.0299 44.7618V27.1852L32.5055 30.4141V69.4785L2.78127 56.647V17.5742ZM65.008 17.5799V39.8651C62.5902 39.7368 60.1745 40.153 57.9357 41.0836C52.0676 43.5376 48.3243 49.1082 47.8765 55.2095L47.0422 55.5717L38.9298 59.0757C38.7525 59.1414 38.5903 59.2427 38.453 59.3737C38.3158 59.5047 38.2065 59.6625 38.1316 59.8375C38.0568 60.0126 38.018 60.2011 38.0178 60.3918C38.0175 60.5824 38.0557 60.7711 38.13 60.9464C38.2043 61.1217 38.3132 61.2798 38.45 61.4112C38.5868 61.5426 38.7488 61.6444 38.9259 61.7106C39.103 61.7767 39.2916 61.8057 39.4801 61.7959C39.6687 61.786 39.8533 61.7375 40.0227 61.6533L47.9155 58.2475C48.0002 59.0783 48.1471 59.9014 48.3549 60.7099C48.6052 61.6533 48.9389 62.5546 49.3338 63.4137L35.2866 69.4785V30.4113L65.008 17.5799ZM59.571 48.381C57.1459 48.381 55.8833 49.8326 55.8833 52.3736V53.9179H58.2249V52.2164C58.2249 51.0821 58.7144 50.6469 59.5014 50.6469C60.2885 50.6469 60.7807 51.0315 60.7807 52.4635C60.7807 57.0457 55.886 57.8179 55.886 62.4928V64.4442H63.0334V62.1755H58.3529C58.3306 62.0632 58.3306 61.9481 58.3306 61.833C58.3306 59.2246 63.2531 57.3686 63.2531 52.3736C63.2531 49.8326 61.9961 48.381 59.5682 48.381H59.571ZM68.7096 48.5635L64.2098 59.2948V61.5662H68.9766V64.4442H71.4045V61.5662H72.5725V59.2948H71.4045V48.5635H68.7096ZM45.5265 50.717C45.5209 50.7189 45.5154 50.7208 45.5098 50.7227C45.3389 50.7318 45.171 50.7727 45.0148 50.8434L42.9846 51.7222L40.9572 52.5982L38.9298 53.4715C38.5905 53.6178 38.3227 53.8942 38.1852 54.2399C38.0478 54.5856 38.052 54.9722 38.197 55.3148C38.3419 55.6573 38.6157 55.9277 38.9581 56.0664C39.3005 56.2052 39.6835 56.2009 40.0227 56.0546L42.0502 55.1758L44.0803 54.3054L46.1078 53.4265C46.416 53.3051 46.6713 53.0766 46.8277 52.7822C46.9841 52.4877 47.0314 52.1466 46.961 51.8202C46.8907 51.4937 46.7073 51.2033 46.4438 51.0011C46.1804 50.7989 45.8569 50.6982 45.5265 50.717ZM68.9738 53.3283V59.2948H66.482L68.9738 53.3283Z" fill="#DE2C2C"/>
-                            </svg>
-                        </div>
-                        <hr class="w-50 mx-auto mb-4 mt-2">
-                        <div class="text-center mb-2 mt-2">
-                            <span class="fw-bold">Transport 24/7</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-muted">Działamy na pełnych obrotach przez cały rok.</p>
-                        </div>
+                <div class="bg-white h-full rounded p-4 xl:p-12">
+                    <div class="text-center content-center mb-6 min-h-[100px]">
+                        <svg width="84" height="73" viewBox="0 0 84 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.7931 0.00327896C33.7931 0.0051508 33.7931 0.00702291 33.7931 0.00889475C33.7745 0.0103901 33.756 0.0122619 33.7375 0.0145099C33.7189 0.0160052 33.7004 0.0178777 33.6819 0.0201256C33.6735 0.0219198 33.6652 0.0237913 33.6568 0.0257408C33.5735 0.0397154 33.4916 0.061331 33.4121 0.0903193C33.4047 0.0939959 33.3972 0.0977402 33.3899 0.101551C33.3664 0.110278 33.3433 0.119641 33.3203 0.129628L1.19049 14C0.855947 14.0491 0.550579 14.2195 0.331501 14.4795C0.112423 14.7394 -0.00535787 15.071 0.000187244 15.4123V57.5343C-0.00144022 57.7344 0.0393333 57.9326 0.119774 58.1155C0.121593 58.1211 0.123447 58.1267 0.125336 58.1323C0.13755 58.158 0.150534 58.1833 0.164271 58.2082C0.313696 58.5112 0.566537 58.7495 0.876228 58.8792L33.3203 72.8843C33.3765 72.9068 33.4341 72.9256 33.4928 72.9405C33.5057 72.9435 33.5187 72.9463 33.5317 72.9489C33.5593 72.9573 33.5871 72.9647 33.6151 72.9714C33.6244 72.9733 33.6337 72.9752 33.6429 72.977C33.6688 72.9815 33.6948 72.9852 33.7208 72.9882C33.8785 73.008 34.0384 73.0005 34.1936 72.9657C34.2253 72.9603 34.2569 72.9537 34.2882 72.9461C34.2984 72.9425 34.3086 72.9387 34.3187 72.9349C34.3206 72.9349 34.3224 72.9349 34.3243 72.9349C34.3743 72.9208 34.4235 72.9039 34.4717 72.8843L50.7466 65.8593C52.4653 68.3612 54.8324 70.3378 57.589 71.5729C60.3456 72.8079 63.3855 73.2538 66.3763 72.8619C70.0323 72.3719 73.4191 70.6554 75.9925 67.9881C78.5659 65.3208 80.1764 61.8575 80.5654 58.1548L82.0338 59.6345L84 57.6494L79.083 52.6881L74.1661 57.6494L76.1323 59.6345L77.737 58.0172C77.3944 61.0605 76.0541 63.9008 73.9292 66.0869C71.8042 68.2729 69.0166 69.6792 66.0092 70.0822C62.7248 70.5217 59.3943 69.7386 56.6402 67.8794C53.8861 66.0202 51.8968 63.2121 51.0442 59.9799C50.1828 56.7505 50.5152 53.315 51.9794 50.315C53.4437 47.315 55.9395 44.9558 59.0009 43.678C62.0613 42.3947 65.4798 42.2802 68.6177 43.356C71.7556 44.4318 74.3982 46.6243 76.0517 49.5237L76.7469 50.7339L79.1581 49.33L78.4629 48.1199C77.4598 46.363 76.1457 44.807 74.586 43.5292C72.6014 41.9223 70.2749 40.8017 67.7891 40.2553C67.7906 40.217 67.7906 40.1786 67.7891 40.1402V15.4123C67.7944 15.0736 67.6783 14.7444 67.4621 14.4853C67.2459 14.2263 66.9442 14.0549 66.6127 14.0028L34.4717 0.129628C34.2596 0.0306203 34.0262 -0.0128341 33.7931 0.00327896ZM33.896 2.93177L40.718 5.87711L11.8253 18.352C11.7953 18.3622 11.7656 18.3734 11.7364 18.3857L4.91714 15.446L33.896 2.93177ZM44.25 7.40173L52.5209 10.976L23.0887 23.6839C22.8124 23.8038 22.5819 24.0108 22.432 24.2741C22.2821 24.5373 22.2207 24.8425 22.2572 25.144C22.2532 25.1888 22.2513 25.2338 22.2516 25.2787V40.3003L19.2369 35.732C19.049 35.447 18.7643 35.2412 18.4365 35.1533C18.1087 35.0654 17.7603 35.1014 17.457 35.2547L13.9084 37.0461V20.5027L44.25 7.40173ZM56.0529 12.5006L62.8749 15.446L33.896 27.9545L27.0796 25.0148L55.9695 12.5399C55.9977 12.5278 56.0255 12.5147 56.0529 12.5006ZM2.78127 17.5742L11.1245 21.1766V39.3175C11.1248 39.5566 11.1854 39.7916 11.3008 40.0003C11.4162 40.209 11.5824 40.3845 11.7838 40.5102C11.9852 40.6359 12.215 40.7076 12.4515 40.7185C12.688 40.7294 12.9233 40.6792 13.1352 40.5726L17.6017 38.318L22.4074 45.5957C22.56 45.8924 22.8124 46.1244 23.1193 46.2499C23.1604 46.2659 23.2021 46.28 23.2445 46.292C23.2463 46.2939 23.2482 46.2958 23.25 46.2976C23.3381 46.3234 23.4284 46.3403 23.5198 46.3482C23.567 46.3525 23.6143 46.3544 23.6616 46.3538C23.7344 46.352 23.8069 46.3445 23.8786 46.3313C23.9435 46.3209 24.0076 46.3059 24.0705 46.2864C24.0863 46.2801 24.1021 46.2736 24.1177 46.2667C24.144 46.2582 24.1699 46.2488 24.1956 46.2387C24.1975 46.2368 24.1993 46.2349 24.2012 46.2331C24.2419 46.2163 24.2818 46.1975 24.3208 46.1769C24.3226 46.175 24.3245 46.1732 24.3263 46.1713C24.57 46.0346 24.7674 45.8272 24.8929 45.5758C25.0184 45.3245 25.0661 45.0409 25.0299 44.7618V27.1852L32.5055 30.4141V69.4785L2.78127 56.647V17.5742ZM65.008 17.5799V39.8651C62.5902 39.7368 60.1745 40.153 57.9357 41.0836C52.0676 43.5376 48.3243 49.1082 47.8765 55.2095L47.0422 55.5717L38.9298 59.0757C38.7525 59.1414 38.5903 59.2427 38.453 59.3737C38.3158 59.5047 38.2065 59.6625 38.1316 59.8375C38.0568 60.0126 38.018 60.2011 38.0178 60.3918C38.0175 60.5824 38.0557 60.7711 38.13 60.9464C38.2043 61.1217 38.3132 61.2798 38.45 61.4112C38.5868 61.5426 38.7488 61.6444 38.9259 61.7106C39.103 61.7767 39.2916 61.8057 39.4801 61.7959C39.6687 61.786 39.8533 61.7375 40.0227 61.6533L47.9155 58.2475C48.0002 59.0783 48.1471 59.9014 48.3549 60.7099C48.6052 61.6533 48.9389 62.5546 49.3338 63.4137L35.2866 69.4785V30.4113L65.008 17.5799ZM59.571 48.381C57.1459 48.381 55.8833 49.8326 55.8833 52.3736V53.9179H58.2249V52.2164C58.2249 51.0821 58.7144 50.6469 59.5014 50.6469C60.2885 50.6469 60.7807 51.0315 60.7807 52.4635C60.7807 57.0457 55.886 57.8179 55.886 62.4928V64.4442H63.0334V62.1755H58.3529C58.3306 62.0632 58.3306 61.9481 58.3306 61.833C58.3306 59.2246 63.2531 57.3686 63.2531 52.3736C63.2531 49.8326 61.9961 48.381 59.5682 48.381H59.571ZM68.7096 48.5635L64.2098 59.2948V61.5662H68.9766V64.4442H71.4045V61.5662H72.5725V59.2948H71.4045V48.5635H68.7096ZM45.5265 50.717C45.5209 50.7189 45.5154 50.7208 45.5098 50.7227C45.3389 50.7318 45.171 50.7727 45.0148 50.8434L42.9846 51.7222L40.9572 52.5982L38.9298 53.4715C38.5905 53.6178 38.3227 53.8942 38.1852 54.2399C38.0478 54.5856 38.052 54.9722 38.197 55.3148C38.3419 55.6573 38.6157 55.9277 38.9581 56.0664C39.3005 56.2052 39.6835 56.2009 40.0227 56.0546L42.0502 55.1758L44.0803 54.3054L46.1078 53.4265C46.416 53.3051 46.6713 53.0766 46.8277 52.7822C46.9841 52.4877 47.0314 52.1466 46.961 51.8202C46.8907 51.4937 46.7073 51.2033 46.4438 51.0011C46.1804 50.7989 45.8569 50.6982 45.5265 50.717ZM68.9738 53.3283V59.2948H66.482L68.9738 53.3283Z" fill="#DE2C2C"/>
+                        </svg>
+                    </div>
+                    <hr class="w-1/2 mx-auto mb-6 mt-2">
+                    <div class="text-center mb-2 mt-2">
+                        <span class="font-bold">Transport 24/7</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">Działamy na pełnych obrotach przez cały rok.</p>
                     </div>
                 </div>
 
                 <!-- Przewóz materiałów ADR -->
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 rounded p-3 p-xl-5">
-                        <div class="text-center align-content-center mb-4" style="min-height: 100px;">
-                            <svg width="80" height="71" viewBox="0 0 80 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.952 5.50003L75.5619 60.25C77.4864 63.5834 75.0808 67.75 71.2318 67.75H8.01195C4.16294 67.75 1.75731 63.5834 3.68181 60.25L35.2917 5.50004C37.2162 2.1667 42.0275 2.1667 43.952 5.50003ZM32.6937 4.00004C35.7729 -1.3333 43.4709 -1.33331 46.5501 4.00002L78.16 58.75C81.2392 64.0834 77.3902 70.75 71.2318 70.75H8.01195C1.85355 70.75 -1.99547 64.0834 1.08373 58.75L32.6937 4.00004ZM42.3652 45.88L43.2052 26.32H35.7252L36.5652 45.88H42.3652ZM43.0452 56V49.16H35.9252V56H43.0452Z" fill="#DE2C2C"/>
-                            </svg>
-                        </div>
-                        <hr class="w-50 mx-auto mb-4 mt-2">
-                        <div class="text-center mb-2 mt-2">
-                            <span class="fw-bold">Przewóz materiałów ADR</span>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-muted">Bezpieczne rozwiązania dla Twoich wymagających ładunków.</p>
-                        </div>
+                <div class="bg-white h-full rounded p-4 xl:p-12">
+                    <div class="text-center content-center mb-6 min-h-[100px]">
+                        <svg width="80" height="71" viewBox="0 0 80 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M43.952 5.50003L75.5619 60.25C77.4864 63.5834 75.0808 67.75 71.2318 67.75H8.01195C4.16294 67.75 1.75731 63.5834 3.68181 60.25L35.2917 5.50004C37.2162 2.1667 42.0275 2.1667 43.952 5.50003ZM32.6937 4.00004C35.7729 -1.3333 43.4709 -1.33331 46.5501 4.00002L78.16 58.75C81.2392 64.0834 77.3902 70.75 71.2318 70.75H8.01195C1.85355 70.75 -1.99547 64.0834 1.08373 58.75L32.6937 4.00004ZM42.3652 45.88L43.2052 26.32H35.7252L36.5652 45.88H42.3652ZM43.0452 56V49.16H35.9252V56H43.0452Z" fill="#DE2C2C"/>
+                        </svg>
+                    </div>
+                    <hr class="w-1/2 mx-auto mb-6 mt-2">
+                    <div class="text-center mb-2 mt-2">
+                        <span class="font-bold">Przewóz materiałów ADR</span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-gray-500">Bezpieczne rozwiązania dla Twoich wymagających ładunków.</p>
                     </div>
                 </div>
             </div>
@@ -360,31 +353,31 @@
     </section>
 
     <!-- Partnership & Recruitment Section -->
-    <section class="partnership-section py-5" id="partnership">
+    <section class="py-12" id="partnership">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="{{ asset('images/partner.png') }}" alt="" class="img-fluid">
+            <div class="flex flex-wrap items-center mb-12">
+                <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+                    <img src="{{ asset('images/partner.png') }}" alt="" class="max-w-full h-auto">
                 </div>
-                <div class="col-lg-6 p-4 px-5">
-                    <h2 class="mb-4 fw-bold">
-                        Twój <span class="text-danger">partner</span><br>
+                <div class="w-full lg:w-1/2 p-6 px-12">
+                    <h2 class="mb-6 font-bold">
+                        Twój <span class="text-brand-red">partner</span><br>
                         w globalnej logistyce
                     </h2>
-                    <p class="text-muted mb-4">
+                    <p class="text-gray-500 mb-6">
                         Wierzymy, że efektywna logistyka to klucz do sukcesu każdej działalności. Od lat wspieramy naszych klientów, dostarczając niezawodne rozwiązania transportowe dostosowane do ich potrzeb. Bez względu na to, czy chodzi o szybkie przewozy ekspresowe, transport ciężarowy, czy bezpieczny przewóz materiałów ADR, nasze doświadczenie i nowoczesna flota pozwalają nam realizować każde zlecenie z najwyższą starannością.
                     </p>
                     <a href="#contact" class="btn btn-primary">Rozpocznij współpracę</a>
                 </div>
             </div>
 
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2 p-4 px-5">
-                    <h2 class="mb-3 fw-bold">
-                        <span class="text-danger">Zatrudnimy</span> przewoźników<br>
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 lg:order-1 order-2 p-6 px-12">
+                    <h2 class="mb-4 font-bold">
+                        <span class="text-brand-red">Zatrudnimy</span> przewoźników<br>
                         do współpracy!
                     </h2>
-                    <p class="text-muted mb-4">
+                    <p class="text-gray-500 mb-6">
                         Współpraca z wiarygodnymi i profesjonalnymi
                         przewoźnikami jest jednym z kluczowych elementów
                         sukcesu i zadowolenia naszych klientów. Partnerów
@@ -393,9 +386,9 @@
                     </p>
                     <a href="#contact" class="btn btn-primary">Rozpocznij współpracę</a>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                <div class="w-full lg:w-1/2 lg:order-2 order-1 mb-6 lg:mb-0">
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/truck.png') }}" alt="Truck cabin interior" class="img-fluid w-100">
+                        <img src="{{ asset('images/truck.png') }}" alt="Truck cabin interior" class="max-w-full h-auto w-full">
                     </div>
                 </div>
             </div>
@@ -403,51 +396,47 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section py-5" id="contact" style="scroll-margin-top: 85px;">
+    <section class="py-12" id="contact" style="scroll-margin-top: 85px;">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row g-0 overflow-hidden">
-                        <div class="col-md-5 bg-danger text-white py-4 p-4 p-lg-5 rounded-5 align-content-center">
-                            <h2 class="fw-bold mb-4 text-center text-lg-start">Skontaktuj się z nami!</h2>
-                            <ul class="list-unstyled mb-0 text-center text-lg-start fw-bold">
-                                <li class="mb-4 d-flex align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start">
-                                    <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04527 1.28802C0.944885 2.42078 0.944885 4.24391 0.944885 7.89018C0.944885 11.5365 0.944885 13.3596 2.04527 14.4923C3.14566 15.6251 4.9167 15.6251 8.45879 15.6251H12.2157C15.7578 15.6251 17.5289 15.6251 18.6293 14.4923C19.7297 13.3596 19.7297 11.5365 19.7297 7.89018C19.7297 4.24391 19.7297 2.42078 18.6293 1.28802C17.5289 0.155273 15.7578 0.155273 12.2157 0.155273H8.4588C4.9167 0.155273 3.14566 0.155273 2.04527 1.28802ZM16.5139 3.5585C16.7629 3.86616 16.7225 4.32341 16.4237 4.5798L14.3606 6.34955C13.5281 7.06373 12.8534 7.64259 12.2578 8.03688C11.6375 8.4476 11.0333 8.70706 10.3373 8.70706C9.64122 8.70706 9.03706 8.4476 8.4167 8.03688C7.82116 7.64259 7.14641 7.06374 6.31391 6.34956L4.25088 4.5798C3.952 4.32341 3.91162 3.86616 4.16068 3.5585C4.40974 3.25084 4.85393 3.20927 5.1528 3.46565L7.18052 5.20512C8.05679 5.95682 8.66517 6.47703 9.1788 6.81709C9.67599 7.14627 10.0132 7.25676 10.3373 7.25676C10.6614 7.25676 10.9986 7.14627 11.4957 6.81709C12.0094 6.47703 12.6178 5.95682 13.494 5.20512L15.5217 3.46565C15.8206 3.20927 16.2648 3.25084 16.5139 3.5585Z" fill="#232427"/>
-                                        </svg>
-                                    </div>
-                                    <a href="mailto:akwariumtrans@op.pl" class="text-decoration-none text-white">akwariumtrans@op.pl</a>
-                                </li>
-                                <li class="mb-4 d-flex align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start">
-                                    <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.43988 1.42783L7.06739 2.55223C7.63368 3.56693 7.40635 4.89805 6.51445 5.78996C6.51444 5.78996 6.51445 5.78996 6.51444 5.78996C6.51433 5.79008 5.43269 6.87193 7.3941 8.83334C9.35485 10.7941 10.4367 9.71381 10.4375 9.713C10.4375 9.71298 10.4375 9.71299 10.4375 9.71297C11.3294 8.82109 12.6605 8.59377 13.6752 9.16006L14.7996 9.78756C16.3318 10.6427 16.5128 12.7914 15.166 14.1382C14.3567 14.9475 13.3653 15.5772 12.2694 15.6188C10.4245 15.6887 7.29139 15.2218 4.14852 12.0789C1.00566 8.93606 0.53875 5.80294 0.608691 3.95803C0.650237 2.8621 1.27994 1.87072 2.0892 1.06145C3.436 -0.285344 5.58477 -0.10439 6.43988 1.42783Z" fill="#232427"/>
-                                        </svg>
-                                    </div>
-                                    <a href="tel:604324770" class="text-decoration-none text-white">604 324 770</a>
-                                </li>
-                                <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center justify-content-lg-start">
-                                    <div class="bg-white rounded d-flex align-items-center justify-content-center mb-2 mb-lg-0 me-lg-3" style="width: 40px; height: 40px;">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.88958 15.8218C12.1613 15.8218 15.6243 14.2634 15.6243 12.3412C15.6243 11.3614 14.7248 10.4763 13.2771 9.84375C12.3938 11.4648 11.0467 12.8621 9.33559 13.5933C8.41587 13.9864 7.36329 13.9864 6.44356 13.5933C4.73249 12.8621 3.3854 11.4648 2.50203 9.84375C1.05439 10.4763 0.154877 11.3614 0.154877 12.3412C0.154877 14.2634 3.61782 15.8218 7.88958 15.8218Z" fill="#232427"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47528 5.39141C2.47528 2.60852 4.89934 0.352539 7.88957 0.352539C10.8798 0.352539 13.3039 2.60852 13.3039 5.39141C13.3039 8.1525 11.5758 11.3744 8.87966 12.5266C8.25115 12.7952 7.52799 12.7952 6.89948 12.5266C4.20334 11.3744 2.47528 8.1525 2.47528 5.39141ZM7.88957 7.31377C8.74392 7.31377 9.43651 6.62118 9.43651 5.76683C9.43651 4.91248 8.74392 4.21989 7.88957 4.21989C7.03522 4.21989 6.34263 4.91248 6.34263 5.76683C6.34263 6.62118 7.03522 7.31377 7.88957 7.31377Z" fill="#232427"/>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <p class="mb-0 text-white">PPHU Akwarium</p>
-                                        <p class="mb-0 text-white">Wrocławska 8, 63-421 Antonin</p>
-                                        <br>
-                                        <p class="mb-0 text-white">NIP: PL6222427386</p>
-                                        <p class="mb-0 text-white">REGON: 300586657</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-7 py-5 d-none d-md-block">
-                            <img src="{{ asset('images/contact.png') }}" alt="Highway at sunset" class="img-fluid h-100 w-100 object-fit-cover rounded-end-5">
-                        </div>
-                    </div>
+            <div class="flex flex-wrap overflow-hidden">
+                <div class="w-full md:w-5/12 bg-brand-red text-white p-6 lg:p-12 rounded-3xl content-center">
+                    <h2 class="font-bold mb-6 text-center lg:text-left">Skontaktuj się z nami!</h2>
+                    <ul class="list-none p-0 mb-0 text-center lg:text-left font-bold">
+                        <li class="mb-6 flex items-center flex-col lg:flex-row justify-center lg:justify-start">
+                            <div class="bg-white rounded flex items-center justify-center mb-2 lg:mb-0 lg:mr-4 w-10 h-10 shrink-0">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04527 1.28802C0.944885 2.42078 0.944885 4.24391 0.944885 7.89018C0.944885 11.5365 0.944885 13.3596 2.04527 14.4923C3.14566 15.6251 4.9167 15.6251 8.45879 15.6251H12.2157C15.7578 15.6251 17.5289 15.6251 18.6293 14.4923C19.7297 13.3596 19.7297 11.5365 19.7297 7.89018C19.7297 4.24391 19.7297 2.42078 18.6293 1.28802C17.5289 0.155273 15.7578 0.155273 12.2157 0.155273H8.4588C4.9167 0.155273 3.14566 0.155273 2.04527 1.28802ZM16.5139 3.5585C16.7629 3.86616 16.7225 4.32341 16.4237 4.5798L14.3606 6.34955C13.5281 7.06373 12.8534 7.64259 12.2578 8.03688C11.6375 8.4476 11.0333 8.70706 10.3373 8.70706C9.64122 8.70706 9.03706 8.4476 8.4167 8.03688C7.82116 7.64259 7.14641 7.06374 6.31391 6.34956L4.25088 4.5798C3.952 4.32341 3.91162 3.86616 4.16068 3.5585C4.40974 3.25084 4.85393 3.20927 5.1528 3.46565L7.18052 5.20512C8.05679 5.95682 8.66517 6.47703 9.1788 6.81709C9.67599 7.14627 10.0132 7.25676 10.3373 7.25676C10.6614 7.25676 10.9986 7.14627 11.4957 6.81709C12.0094 6.47703 12.6178 5.95682 13.494 5.20512L15.5217 3.46565C15.8206 3.20927 16.2648 3.25084 16.5139 3.5585Z" fill="#232427"/>
+                                </svg>
+                            </div>
+                            <a href="mailto:akwariumtrans@op.pl" class="no-underline text-white">akwariumtrans@op.pl</a>
+                        </li>
+                        <li class="mb-6 flex items-center flex-col lg:flex-row justify-center lg:justify-start">
+                            <div class="bg-white rounded flex items-center justify-center mb-2 lg:mb-0 lg:mr-4 w-10 h-10 shrink-0">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.43988 1.42783L7.06739 2.55223C7.63368 3.56693 7.40635 4.89805 6.51445 5.78996C6.51444 5.78996 6.51445 5.78996 6.51444 5.78996C6.51433 5.79008 5.43269 6.87193 7.3941 8.83334C9.35485 10.7941 10.4367 9.71381 10.4375 9.713C10.4375 9.71298 10.4375 9.71299 10.4375 9.71297C11.3294 8.82109 12.6605 8.59377 13.6752 9.16006L14.7996 9.78756C16.3318 10.6427 16.5128 12.7914 15.166 14.1382C14.3567 14.9475 13.3653 15.5772 12.2694 15.6188C10.4245 15.6887 7.29139 15.2218 4.14852 12.0789C1.00566 8.93606 0.53875 5.80294 0.608691 3.95803C0.650237 2.8621 1.27994 1.87072 2.0892 1.06145C3.436 -0.285344 5.58477 -0.10439 6.43988 1.42783Z" fill="#232427"/>
+                                </svg>
+                            </div>
+                            <a href="tel:604324770" class="no-underline text-white">604 324 770</a>
+                        </li>
+                        <li class="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-start">
+                            <div class="bg-white rounded flex items-center justify-center mb-2 lg:mb-0 lg:mr-4 w-10 h-10 shrink-0">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.88958 15.8218C12.1613 15.8218 15.6243 14.2634 15.6243 12.3412C15.6243 11.3614 14.7248 10.4763 13.2771 9.84375C12.3938 11.4648 11.0467 12.8621 9.33559 13.5933C8.41587 13.9864 7.36329 13.9864 6.44356 13.5933C4.73249 12.8621 3.3854 11.4648 2.50203 9.84375C1.05439 10.4763 0.154877 11.3614 0.154877 12.3412C0.154877 14.2634 3.61782 15.8218 7.88958 15.8218Z" fill="#232427"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47528 5.39141C2.47528 2.60852 4.89934 0.352539 7.88957 0.352539C10.8798 0.352539 13.3039 2.60852 13.3039 5.39141C13.3039 8.1525 11.5758 11.3744 8.87966 12.5266C8.25115 12.7952 7.52799 12.7952 6.89948 12.5266C4.20334 11.3744 2.47528 8.1525 2.47528 5.39141ZM7.88957 7.31377C8.74392 7.31377 9.43651 6.62118 9.43651 5.76683C9.43651 4.91248 8.74392 4.21989 7.88957 4.21989C7.03522 4.21989 6.34263 4.91248 6.34263 5.76683C6.34263 6.62118 7.03522 7.31377 7.88957 7.31377Z" fill="#232427"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-0 text-white">PPHU Akwarium</p>
+                                <p class="mb-0 text-white">Wrocławska 8, 63-421 Antonin</p>
+                                <br>
+                                <p class="mb-0 text-white">NIP: PL6222427386</p>
+                                <p class="mb-0 text-white">REGON: 300586657</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-7/12 py-12 hidden md:block">
+                    <img src="{{ asset('images/contact.png') }}" alt="Highway at sunset" class="max-w-full h-auto h-full w-full object-cover rounded-r-[2rem]">
                 </div>
             </div>
         </div>
