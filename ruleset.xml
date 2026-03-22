@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="akwariumtrans">
+    <description>PHP_CodeSniffer: PSR-12 dla kodu aplikacji</description>
+
+    <arg name="basepath" value="."/>
+    <arg name="colors"/>
+    <arg name="parallel" value="75"/>
+    <arg value="ps"/>
+
+    <file>src</file>
+    <file>tests</file>
+    <file>config</file>
+    <file>public/index.php</file>
+    <file>importmap.php</file>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/var/*</exclude-pattern>
+    <!-- wygenerowany przez Symfony, wiele klas w jednym pliku -->
+    <exclude-pattern>config/reference.php</exclude-pattern>
+
+    <rule ref="PSR12"/>
+</ruleset>
