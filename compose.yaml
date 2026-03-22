@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    restart: always
+    environment:
+      - APP_ENV=prod
+      - APP_SECRET=${APP_SECRET}
+    expose:
+      - "80"

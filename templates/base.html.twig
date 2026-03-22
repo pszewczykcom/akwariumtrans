@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO (Open Graph) -->
     <meta property="og:url" content="https://akwariumtrans.pl" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Akwarium - Transport" />
@@ -15,90 +13,77 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="628" />
-    <!-- SEO (Twitter) -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Akwarium - Transport" />
     <meta name="twitter:description" content="Firma spedycyjno-transportowa – niezawodny partner logistyczny, który dostarczy Twój towar szybko i bezpiecznie w dowolne miejsce na świecie." />
     <meta name="twitter:url" content="https://akwariumtrans.pl" />
     <meta name="twitter:image" content="https://akwariumtrans.pl/images/lptp.jpg" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" sizes="48x48">
+    <link rel="icon" type="image/png" href="{{ asset('favicon-16x16.png') }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}" sizes="180x180">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <meta name="apple-mobile-web-app-title" content="Akwarium - Transport" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <title>{% block title %}Akwarium - Transport{% endblock %}</title>
+    <meta name="description" content="{% block description %}Firma spedycyjno-transportowa – niezawodny partner logistyczny, który dostarczy Twój towar szybko i bezpiecznie w dowolne miejsce na świecie.{% endblock %}"/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/app.css">
-
-    <!-- Title -->
-    <title>Akwarium - Współpraca</title>
-
-    <!-- Description -->
-    <meta name="description" content="Firma spedycyjno-transportowa – niezawodny partner logistyczny, który dostarczy Twój towar szybko i bezpiecznie w dowolne miejsce na świecie."/>
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSN556B3ET"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-DSN556B3ET');
     </script>
+
+    {{ importmap('app') }}
 </head>
 <body>
-    <!-- Navbar -->
+    {% set currentRoute = app.request.attributes.get('_route') %}
+
     <nav class="navbar navbar-expand-lg sticky-top bg-white">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="/images/logo.png" alt="Logo">
+            <a class="navbar-brand" href="{{ path('home') }}">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo">
             </a>
 
             <div class="d-none d-sm-flex align-items-center me-auto ms-4">
-                    <span class="d-inline-block text-center me-2">
-                        <img src="images/24.png" alt="24/7" class="img-fluid i24">
-                    </span>
                 <span class="d-inline-block text-center me-2">
-                        <img src="images/phone.png" alt="Telefon" class="img-fluid phone">
-                    </span>
+                    <img src="{{ asset('images/24.png') }}" alt="24/7" class="img-fluid i24">
+                </span>
+                <span class="d-inline-block text-center me-2">
+                    <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="img-fluid phone">
+                </span>
                 <a href="tel:+48604324770" class="text-decoration-none phone-link">+48 604 324 770</a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto gap-0 gap-sm-4 text-center text-lg-end">
                     <li class="nav-item">
-                        <a class="nav-link active" href="spedycja.html">Spedycja</a>
+                        <a class="nav-link{{ currentRoute == 'spedycja' ? ' active' : '' }}" href="{{ path('spedycja') }}">Spedycja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="transport.html">Transport</a>
+                        <a class="nav-link{{ currentRoute == 'transport' ? ' active' : '' }}" href="{{ path('transport') }}">Transport</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logistyka.html">Logistyka</a>
+                        <a class="nav-link{{ currentRoute == 'logistyka' ? ' active' : '' }}" href="{{ path('logistyka') }}">Logistyka</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="wspolpraca.html">Współpraca</a>
+                        <a class="nav-link{{ currentRoute == 'wspolpraca' ? ' active' : '' }}" href="{{ path('wspolpraca') }}">Współpraca</a>
                     </li>
                     <li class="nav-item d-sm-none">
                         <div class="text-center p-2">
-                                <span class="d-inline-block me-2">
-                                    <img src="images/24.png" alt="24/7" class="img-fluid i24">
-                                </span>
                             <span class="d-inline-block me-2">
-                                    <img src="images/phone.png" alt="Telefon" class="img-fluid phone">
-                                </span>
+                                <img src="{{ asset('images/24.png') }}" alt="24/7" class="img-fluid i24">
+                            </span>
+                            <span class="d-inline-block me-2">
+                                <img src="{{ asset('images/phone.png') }}" alt="Telefon" class="img-fluid phone">
+                            </span>
                             <a href="tel:+48604324770" class="text-decoration-none phone-link">+48 604 324 770</a>
                         </div>
                     </li>
@@ -106,91 +91,41 @@
             </div>
         </div>
     </nav>
-    <!-- End: Navbar -->
 
-    <!-- Hero Section -->
-    <header class="hero-section align-content-center mb-5" id="hero" style="background-image: url('/images/header-5.jpg') !important;">
-        <div class="container">
-            <div class="row align-items-center text-center text-lg-start">
-                <div class="col-12 col-lg-6 hero-content p-2 p-lg-0">
-                    <h1 class="mb-4">Współpraca</h1>
-                    <p class="mb-4">
-                        Współpracując z nami, możesz liczyć na prowadzenie pojazdów zgodnie z Twoimi preferencjami, kompleksową organizację transportu oraz precyzyjną wycenę usług. Dbamy o dostosowanie trasy, monitorowanie realizacji i pełną przejrzystość kosztów, aby zapewnić efektywny i zgodny z harmonogramem przewóz.
-                    </p>
+    {% block body %}{% endblock %}
 
-                    <div class="d-flex align-items-center mb-4 flex-lg-row flex-column text-center text-lg-start">
-                        <a href="index.html#contact" class="btn btn-secondary mb-3 mb-lg-0">Skontaktuj się z nami</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End: Hero section -->
-
-    <!-- Services Section -->
-    <section class="services-section py-5">
-        <div class="container">
-            <!-- Recruitment Section -->
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 order-lg-1 order-2 p-4 px-5">
-                    <h2 class="mb-3 fw-bold">
-                        <span class="text-danger">Zatrudnimy</span> przewoźników<br>
-                        do współpracy!
-                    </h2>
-                    <p class="text-muted mb-4">
-                        Współpraca z wiarygodnymi i profesjonalnymi
-                        przewoźnikami jest jednym z kluczowych elementów
-                        sukcesu i zadowolenia naszych klientów. Partnerów
-                        dobieramy według ustalonych standardów, które
-                        gwarantują wysoką jakość obsługi naszych klientów.
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Rozpocznij współpracę</a>
-                </div>
-                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-                    <div class="rounded overflow-hidden">
-                        <img src="images/truck.png" alt="Truck cabin interior" class="img-fluid w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="py-5" style="background: #232427;">
         <div class="container">
             <div class="row justify-content-center">
-                <!-- Logo Column -->
                 <div class="col-lg-4 col-xl-3 mb-5 mb-lg-0 d-flex align-items-center justify-content-center justify-content-lg-start">
                     <div class="text-center">
-                        <img src="/images/logo-footer.png" alt="Akwarium Logo" class="img-fluid mb-4 d-block m-auto" style="max-width: 180px;">
-                        <img src="images/24-white.png" alt="24/7" class="img-fluid d-block m-auto" style="max-width: 35px;">
+                        <img src="{{ asset('images/logo-footer.png') }}" alt="Akwarium Logo" class="img-fluid mb-4 d-block m-auto" style="max-width: 180px;">
+                        <img src="{{ asset('images/24-white.png') }}" alt="24/7" class="img-fluid d-block m-auto" style="max-width: 35px;">
                     </div>
                 </div>
 
-                <!-- Navigation Column -->
                 <div class="col-lg-4 col-xl-3 mb-5 mb-lg-0 text-center text-lg-start">
                     <h5 class="text-white mb-4">Na skróty</h5>
                     <hr class="border-secondary opacity-50 w-50 mb-4 mx-auto mx-lg-0">
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <a href="index.html" class="text-decoration-none text-white fw-light">Strona główna</a>
+                            <a href="{{ path('home') }}" class="text-decoration-none text-white fw-light">Strona główna</a>
                         </li>
                         <li class="mb-3">
-                            <a href="wspolpraca.html" class="text-decoration-none text-white fw-light">Współpraca</a>
+                            <a href="{{ path('wspolpraca') }}" class="text-decoration-none text-white fw-light">Współpraca</a>
                         </li>
                         <li class="mb-3">
-                            <a href="transport.html" class="text-decoration-none text-white fw-light">Transport</a>
+                            <a href="{{ path('transport') }}" class="text-decoration-none text-white fw-light">Transport</a>
                         </li>
                         <li class="mb-3">
-                            <a href="logistyka.html" class="text-decoration-none text-white fw-light">Logistyka</a>
+                            <a href="{{ path('logistyka') }}" class="text-decoration-none text-white fw-light">Logistyka</a>
                         </li>
                         <li class="mb-3">
-                            <a href="spedycja.html" class="text-decoration-none text-white fw-light">Spedycja</a>
+                            <a href="{{ path('spedycja') }}" class="text-decoration-none text-white fw-light">Spedycja</a>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Contact Column -->
                 <div class="col-lg-4 col-xl-3 mb-0 text-center text-lg-start">
                     <h5 class="text-white mb-4">Kontakt</h5>
                     <hr class="border-secondary opacity-50 w-50 mb-4 mx-auto mx-lg-0">
@@ -228,7 +163,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

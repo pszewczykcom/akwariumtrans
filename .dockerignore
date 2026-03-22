@@ -1,0 +1,12 @@
+.git
+.gitignore
+.gitattributes
+.cursor
+vendor/
+var/
+node_modules/
+*.md
+compose.yaml
+compose.override.yaml
+.env.local
+.env.*.local
